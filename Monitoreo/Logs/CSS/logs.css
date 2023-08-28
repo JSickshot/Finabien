@@ -1,0 +1,27 @@
+body {
+    background-image: url("fondo\ logeo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.login-box {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    background-size: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
