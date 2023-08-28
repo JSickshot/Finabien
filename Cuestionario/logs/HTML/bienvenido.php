@@ -22,20 +22,30 @@ $username = $_SESSION["username"];
   <div class="center-container">
     <div class="header">
       <h1>Bienvenido
-        <?php echo $username; ?>
+        <?php echo $username; ?><br>
       </h1>
     </div>
+    <br>
+    <br>
     <div class="center-container">
       <div class="button-container">
         <br>
-        <a href="../../empresa/html/empresa.html"><button>Botón 1</button></a>
-        <a href="../../mando/html/mando1.html"><button>Botón 2</button></a>
-        <a href="cerrar.php"><button>Cerrar sesión</button></a>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../../empresa/html/empresa.html"><button>AutoEvaluación</button></a>
+        <a href="../../mando/html/mando1.html"><button>Evaluación a los mandos</button></a>
+        
       </div>
       
     </div>
   </div>
-
+  <a href="cerrar.php"><button>Cerrar sesión</button></a>
 </body>
 
 </html>
