@@ -1,0 +1,95 @@
+CREATE TABLE users (
+    ID INT,
+	usuario varchar (25),
+	pass varchar (25),
+    PRIMARY KEY (ID)
+);
+
+INSERT INTO users (ID, usuario, pass) VALUES
+    (1, 'Francisco', 'FRA1590'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (2, 'Edgar-Soto', 'EDG4567'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (3, 'Mario', 'MAR4531');
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (4, 'Pascual', 'PAS7548'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (5, 'Pablo', 'PAB8844');
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (6, 'Alejandro-Melo', 'ALE4059'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (7, 'Fernando', 'FER1425'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (8, 'Javier', 'JAV4123'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (9, 'Mercedes', 'MER6842'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (10, 'Ilse', 'ILS7319'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (11, 'Moises', 'MOI9173'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (12, 'Jose-Luis', 'JOS1400'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (13, 'Berenice', 'BER6598'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (14, 'Alejandro-santos', 'ALES902');
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (15, 'Lorena', 'LOR0001'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (16, 'Jose-Juan', 'JSJ1020'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (17, 'Emma', 'EMM4141'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (18, 'Nelson-Sandoval', 'NEL4569'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (19, 'Austreberto-Martinez', 'AUS4575'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (20, 'Diego-Romero', 'DGO4159'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (21, 'Francisco-Ramirez', 'FRR7414'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (22, 'Felipe-Torres', 'FLT4595'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (23, 'Javier-Morales', 'JAM4579'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (24, 'Haydee-Martinez', 'HAY9510'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (25, 'Dulce-Vargas', 'DVR4512'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (26, 'Filimon-Casiano', 'FCN4597'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (27, 'Catalina-Lazaro', 'CLZ5498'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (28, 'Enrique-Sotelo', 'ESO4549'); 
+
+    INSERT INTO users (ID, usuario, pass) VALUES
+    (29, 'Jaime-Anguiano', 'JAO5349'); 
+
+    

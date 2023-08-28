@@ -1,0 +1,15 @@
+CREATE TABLE respuestas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tecnico VARCHAR(3) NOT NULL,
+    nombre VARCHAR(255),
+    actividades TEXT,
+    fortalezas TEXT,
+    mejoras TEXT,
+    aportacion TEXT,
+    pregunta18 TEXT,
+    pregunta23 TEXT,
+    pregunta24 TEXT,
+    pregunta25 TEXT,
+    pregunta5 TEXT
+    opinion TEXT
+);
