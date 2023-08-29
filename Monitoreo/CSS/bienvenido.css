@@ -1,0 +1,37 @@
+body {
+    background-image: url("portada_ev.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button-container {
+    display: flex;
+    
+    align-items: center; 
+    height: 100vh; 
+
+}
+
+.button-container button {
+    margin: 10px; 
+}
+.center-container h1 {
+    text-align: center;
+}
+
+.logout-btn {
+    display: block;
+    float: right;
+    margin-top: 40px;
+    margin-right: 5px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .logout-btn:hover {
+    background-color: #d32f2f;
+  }

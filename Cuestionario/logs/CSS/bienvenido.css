@@ -3,35 +3,51 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.button-container {
-    display: flex;
-    
-    align-items: center; 
-    height: 100vh; 
-
-}
-
-.button-container button {
-    margin: 10px; 
-}
-.center-container h1 {
-    text-align: center;
-}
-
-.logout-btn {
-    display: block;
-    float: right;
-    margin-top: 40px;
-    margin-right: 5px;
-    padding: 10px 20px;
-    background-color: #f44336;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    margin: 0; 
   }
-  
-  .logout-btn:hover {
-    background-color: #d32f2f;
+
+  .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+  }
+
+  .header h1 {
+    text-align: center;
+    color: #00853c;
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .button-container a {
+    text-decoration: none;
+  }
+
+  .button-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #ba9355;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+  }
+
+  .button-container button:hover {
+    background-color: #00853c;
   }

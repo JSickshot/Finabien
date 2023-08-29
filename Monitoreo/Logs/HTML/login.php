@@ -3,7 +3,7 @@
 
 <head>
     <title>Centro de monitoreo</title>
-    <link rel="stylesheet" href="../CSS/logs.css">
+    <link rel="stylesheet" href="../../CSS/logs_principal.css">
 </head>
 
 <body>

@@ -14,7 +14,7 @@ $username = $_SESSION["username"];
 
 <head>
   <title>Bienvenido</title>
-  <link rel="stylesheet" href="../css/bienvenido.css">
+  <link rel="stylesheet" href="../../css/bienvenido.css">
 </head>
 
 <body>
