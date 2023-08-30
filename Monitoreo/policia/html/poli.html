@@ -30,24 +30,31 @@
             </tr>
             <tr>
                 <td>
-                    <form>
-                        <label for="fecha">Fecha:</label>
-                        <input type="date" id="fecha" name="fecha"><br>
-                        <label for="hora">Hora:</label>
-                        <input type="time" id="hora" name="hora"><br>
-
-                        <label for="registro">Numero de Registro:</label>
-                        <input type="text" name="registro" maxlength="8" id="registro" required oninput="obtenerDatos()" autocomplete="off"><br>
-
-                        <label for="sucursal">Nombre de Sucursal:</label>
-                        <input type="text" id="sucursal" name="sucursal" required readonly><br>
-                        
-                        <label for="estado">Estado:</label>
-                        <input type="text" id="gerencia" name="registro" required readonly><br>
-                        
-                        <label for="region">Region:</label>
-                        <input type="text" id="region" name="region"required readonly><br>
-                    </form>
+                    <div class="container">
+                        <div class="left-column">
+                            <form>
+                                <label for="fecha">Fecha:</label>
+                                <input type="date" id="fecha" name="fecha"><br>
+                                <label for="hora">Hora:</label>
+                                <input type="time" id="hora" name="hora"><br>
+                            </form>
+                        </div>
+                        <div class="right-column">
+                            <form>
+                                <label for="registro">Numero de Registro:</label>
+                                <input type="text" name="registro" maxlength="8" id="registro" required oninput="obtenerDatos()" autocomplete="off"><br>
+    
+                                <label for="sucursal">Nombre de Sucursal:</label>
+                                <input type="text" id="sucursal" name="sucursal" required readonly><br>
+    
+                                <label for="estado">Estado:</label>
+                                <input type="text" id="gerencia" name="registro" required readonly><br>
+    
+                                <label for="region">Region:</label>
+                                <input type="text" id="region" name="region" required readonly><br>
+                            </form>
+                        </div>
+                    </div>
                 </td>
             </tr>
         </table>
@@ -297,6 +304,7 @@
             <option value="MALCANTAR">MOISES ALCANTAR DELGADO</option>
             <option value="PCASTRO">PASCUAL CASTRO ZAVALA</option>
             <option value="PMEJIA">PABLO MEJIA TORIZ</option>
+            <option value="RCASTAÑEDA">ROBERTO CARLOS ORTIZ CASTAÑEDA</option>
         </select><br>
         <label for="MONITORISTA">Monitorista</label>
         <br>
