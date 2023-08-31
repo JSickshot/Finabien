@@ -1,0 +1,23 @@
+create table Cuestionario_satisfaccion(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre varchar(100),
+    pregunta1 varchar(100),
+    pregunta2 varchar(100),
+    pregunta3 varchar(100),
+    pregunta4 varchar(100),
+    pregunta5 varchar(100),
+    pregunta6 varchar(100),
+    pregunta7 varchar(100),
+    pregunta8 varchar(100),
+    pregunta9 varchar(100),
+    pregunta10 varchar(100),
+    pregunta11 varchar(100),
+    pregunta12 varchar(100),
+    pregunta13 varchar(100),
+    pregunta14 varchar(100),
+    pregunta15 varchar(100),
+    pregunta16 varchar(100),
+    pregunta17 varchar(100),
+    pregunta18 varchar(100),
+    opiniones varchar(500)
+);

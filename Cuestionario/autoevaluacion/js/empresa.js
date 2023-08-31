@@ -22,3 +22,16 @@ var selectTecnico = document.getElementById("tecnico");
 selectTecnico.addEventListener("change", ocultas);
 
 ocultas();
+
+const paginacionLinks = document.querySelectorAll('.paginacion a');
+
+paginacionLinks.forEach(link => {
+    link.addEventListener('click', e => {
+        if (link.classList.contains('inactive')) {
+            e.preventDefault();
+        } else {
+            const nextPage = link.getAttribute('href');
+            window.location.href = nextPage;
+        }
+    });
+});
