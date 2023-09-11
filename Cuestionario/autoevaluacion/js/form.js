@@ -32,3 +32,17 @@ paginacionLinks.forEach(link => {
         }
     });
 });
+
+function calcularPuntuacion() {
+    
+    var puntuacion = 0;
+    puntuacion += parseInt(document.querySelector('input[name="prueba1"]:checked').value);
+    puntuacion += parseInt(document.querySelector('input[name="prueba2"]:checked').value);
+    // Repite este proceso para todas las preguntas
+
+    
+    document.getElementById('puntuacion_total').value = puntuacion;
+
+    
+    document.querySelector('form').submit();
+}
