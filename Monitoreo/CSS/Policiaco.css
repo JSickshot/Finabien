@@ -43,7 +43,7 @@ form input[type="time"] {
 
 .left-column {
     flex: 1;
-    padding-right: 20px;
+    padding-right: 0px;
     position: relative;
 }
 

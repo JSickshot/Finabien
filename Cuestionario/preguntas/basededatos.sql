@@ -57,6 +57,6 @@ create table Cuestionario_satisfaccion(
     observaciones_prueba17 TEXT,
     prueba18 INT,
     observaciones_prueba18 TEXT,
-    opiniones19 TEXT
+    opiniones18 TEXT
 );
 
