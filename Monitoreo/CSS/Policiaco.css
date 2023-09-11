@@ -48,6 +48,6 @@ form input[type="time"] {
 }
 
 .right-column {
-    flex: 1;
+    flex: 0;
     position: relative;
 }

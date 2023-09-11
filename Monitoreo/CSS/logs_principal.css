@@ -1,9 +1,8 @@
 body {
-    background-image: url("fondo\ logeo.png");
+    background-image: url("logeo_monitoreo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
 }
 
 .login-container {
