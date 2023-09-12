@@ -22,11 +22,3 @@ function ocultas() {
             selectTecnico.addEventListener("change", ocultas);
 
             ocultas();
-
-            const preguntas = document.querySelectorAll('label[for^="pregunta"]');
-
-            preguntas.forEach((pregunta, index) => {
-                const numero = index + 1;
-                const preguntaTexto = pregunta.textContent;
-                pregunta.textContent = `${numero}. ${preguntaTexto}`;
-            });

@@ -1,6 +1,6 @@
 create table Cuestionario_satisfaccion(
     id INT AUTO_INCREMENT PRIMARY KEY,
-    fecha date,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     nombre varchar(100),
     pregunta1 varchar(100),
     pregunta2 varchar(100),
@@ -57,6 +57,6 @@ create table Cuestionario_satisfaccion(
     observaciones_prueba17 TEXT,
     prueba18 INT,
     observaciones_prueba18 TEXT,
-    opiniones18 TEXT
+    opiniones19 TEXT
 );
 
