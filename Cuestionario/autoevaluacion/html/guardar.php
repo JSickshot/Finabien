@@ -17,53 +17,6 @@ function limpiarDatos($dato) {
     return $dato;
 }
 
-$stmt = $conn->prepare("INSERT INTO Cuestionario_satisfaccion (
-    nombre, 
-    pregunta1, 
-    pregunta2, 
-    pregunta3, 
-    pregunta4,
-    pregunta5,
-    pregunta6, 
-    pregunta7,
-    pregunta8,
-    pregunta9,
-    pregunta10, 
-    pregunta11,
-    pregunta12, 
-    pregunta13,
-    pregunta14,
-    pregunta15,
-    pregunta16,
-    pregunta17,
-    pregunta18,
-    opiniones, 
-    prueba1, 
-    observaciones_prueba1,
-    prueba2, observaciones_prueba2, 
-    prueba3, observaciones_prueba3,
-    prueba4, observaciones_prueba4,
-    prueba5, observaciones_prueba5,
-    prueba6, observaciones_prueba6,
-    prueba7,observaciones_prueba7, 
-    prueba8, observaciones_prueba8, 
-    prueba9, observaciones_prueba9,
-    prueba10,observaciones_prueba10,
-    prueba11, observaciones_prueba11,
-    prueba12, observaciones_prueba12, 
-    prueba13,observaciones_prueba13, 
-    prueba14, observaciones_prueba14, 
-    prueba15, observaciones_prueba15,
-    prueba16,observaciones_prueba16,
-    prueba17, observaciones_prueba17, 
-    prueba18, observaciones_prueba18, 
-    opiniones19
-) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-
-if (!$stmt) {
-    die("Error en la preparación de la consulta: " . $conn->error);
-}
-
 $nombre = limpiarDatos($_POST['nombre']);
 $pregunta1 = limpiarDatos($_POST['pregunta1']);
 $pregunta2 = limpiarDatos($_POST['pregunta2']);
@@ -122,6 +75,37 @@ $prueba18 = limpiarDatos($_POST['prueba18']);
 $observaciones_prueba18 = limpiarDatos($_POST['observaciones_prueba18']);
 $opiniones19 = limpiarDatos($_POST['opiniones19']);
 
+$stmt = $conn->prepare("INSERT INTO Cuestionario_satisfaccion (
+    nombre, pregunta1, pregunta2, pregunta3, pregunta4, pregunta5,
+    pregunta6, pregunta7, pregunta8, pregunta9, pregunta10, pregunta11,
+    pregunta12, pregunta13, pregunta14, pregunta15, pregunta16, pregunta17,
+    pregunta18, opiniones, prueba1, observaciones_prueba1, prueba2, observaciones_prueba2,
+    prueba3, observaciones_prueba3, prueba4, observaciones_prueba4, prueba5, observaciones_prueba5,
+    prueba6, observaciones_prueba6, prueba7,observaciones_prueba7, 
+    prueba8, observaciones_prueba8, prueba9, observaciones_prueba9,
+    prueba10,observaciones_prueba10, prueba11, observaciones_prueba11,
+    prueba12, observaciones_prueba12,prueba13,observaciones_prueba13, 
+    prueba14, observaciones_prueba14,prueba15, observaciones_prueba15,prueba16,observaciones_prueba16,
+    prueba17, observaciones_prueba17,prueba18, observaciones_prueba18, 
+    opiniones19
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+
+if (!$stmt) {
+    die("Error en la preparación de la consulta: " . $conn->error);
+}
+
+$stmt->bind_param("ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+    $nombre, $pregunta1, $pregunta2, $pregunta3, $pregunta4, $pregunta5,
+    $pregunta6, $pregunta7, $pregunta8, $pregunta9, $pregunta10, $pregunta11,
+    $pregunta12, $pregunta13, $pregunta14, $pregunta15, $pregunta16, $pregunta17,
+    $pregunta18, $opiniones19, $prueba1, $observaciones_prueba1, $prueba2, $observaciones_prueba2,
+    $prueba3, $observaciones_prueba3, $prueba4, $observaciones_prueba4, $prueba5, $observaciones_prueba5,
+    $prueba6, $observaciones_prueba6, $prueba7, $observaciones_prueba7, $prueba8, $observaciones_prueba8,
+    $prueba9, $observaciones_prueba9, $prueba10, $observaciones_prueba10, $prueba11, $observaciones_prueba11,
+    $prueba12, $observaciones_prueba12, $prueba13, $observaciones_prueba13, $prueba14, $observaciones_prueba14,
+    $prueba15, $observaciones_prueba15, $prueba16, $observaciones_prueba16, $prueba17, $observaciones_prueba17,
+    $prueba18, $observaciones_prueba18
+);
 
 if ($stmt->execute()) {
     echo "Datos guardados correctamente";
