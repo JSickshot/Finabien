@@ -190,9 +190,8 @@ $stmt->bind_param("sssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
 );
 
 if ($stmt->execute()) {
-    echo "Datos guardados correctamente";
-} else {
-    echo "Error al guardar los datos: " . $stmt->error;
+    header("Location: gracias.php");
+    exit();
 }
 
 $stmt->close();
