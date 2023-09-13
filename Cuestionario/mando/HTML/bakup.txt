@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Evaluación</title>
+    <link rel="stylesheet" href="../css/mando.css">
+</head>
+
+<body>
+    <form action="guardar.php" method="post" id="ratingForm">
+
+        <div class="page">
+            <div class="container">
+                <img class="image" src="logo-05.png" alt="Descripción de la imagen" style="margin-left: 825px;">
+            </div>
+            <h2>Gerencia de monitoreo y videovigilancia</h2>
+    <h2>Evaluación de los mandos</h2>
+    <br />
+    <br />
+
+    <b><label for="instruccion">Esta encuesta es anónima y personal, dirigida al personal de la
+        Dirección de la Unidad Estratégica de inteligencia
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      </label>
+      <br />
+      <br />
+
+      <label for="instruccion2">Agradecemos dar su respuesta con la mayor transparencia y veracidad a
+        las diversas preguntas del cuestionario, lo cual nos permitirá un
+        acercamiento a la realidad actual de esta dirección
+      </label>
+      <br />
+      <br />
+      <label for="instruccion3">Por favor, lea con atención y señale la respuesta que considere
+        acertada
+      </label>
+    </b>
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <div class="formulario">
+      <h2>Selecciona puesto que se evalúa:</h2>
+      <tr>
+        <td>
+          <input type="radio" name="servicio" value="Dirección de la unidad estratégica de inteligencia" /> 
+          Dirección de la unidad estratégica de inteligencia
+        </td><br />
+      </tr>
+
+      <tr>
+        <td>
+          <input type="radio" name="servicio" value="Subdirectora con cargo en la dirección estrategica de inteligencia " />
+          Subdirectora con cargo en la dirección estrategica de inteligencia 
+        </td><br />
+      </tr>
+
+      <tr>
+        <td>
+          <input type="radio" name="servicio"
+            value="Subdirector de seguridad e investigación de protección civil" />
+            Subdirector de seguridad e investigación de protección civil
+        </td><br />
+      </tr>
+
+      <tr>
+        <td>
+          <input type="radio" name="servicio" value="Gerente de monitoreo y videovigilancia" />
+          Gerente de monitoreo y videovigilancia
+        </td><br />
+      </tr>
+
+      <tr>
+        <td>
+          <input type="radio" name="servicio" value="Coordinacion de soporte técnico" />
+          Coordinación de soporte técnico
+        </td><br />
+      </tr>
+
+      <tr>
+        <td>
+          <input type="radio" name="servicio" value="Coordinación de centro nacional de monitoreo" />
+          Coordinación de centro nacional de monitoreo
+        </td><br />
+      </tr>
+
+      <tr>
+        <td>
+          <input type="radio" name="servicio" value="encargado de la coordinación de desarrollo tecnológico" />
+          Encargado de la coordinación de desarrollo tecnológico
+        </td><br />
+      </tr>
+
+      <tr>
+        <td>
+          <input type="radio" name="servicio" value="Jefe de departamento de seguridad, investigación y protección civil" />
+          Jefe de departamento de seguridad, investigación y protección civil
+        </td><br />
+      </tr>
+
+      <tr>
+        <td>
+          <input type="radio" name="servicio" value="Coordinador de protección civil" />
+          Coordinador de protección civil
+        </td><br />
+      </tr>
+
+      <tr>
+        <td>
+          <input type="radio" name="servicio" value="Coordinación del CNM" />
+          Coordinador de investigación
+        </td><br />
+      </tr>
+
+      <tr>
+        <td>
+          <input type="radio" name="servicio" value="Coordinador de seguridad fisica" />
+          Coordinador de seguridad fisica
+        </td><br />
+      </tr>
+
+      <h2>¿Qué tan fácil es obtener ayuda de su jefe/a cuando la necesita?</h2>
+      <label><input type="radio" name="ayuda2" value="Extremadamente fácil" />Extremadamente fácil</label>
+      <label><input type="radio" name="ayuda2" value="Muy fácil" />Muy fácil</label><br />
+      <label><input type="radio" name="ayuda2" value="Algo fácil" />Algo fácil</label><br />
+      <label><input type="radio" name="ayuda2" value="No tan fácil" />No tan fácil</label><br />
+      <label><input type="radio" name="ayuda2" value="Nada fácil" />Nada fácil</label><br /><br />
+
+      <h2>¿Qué tan disponible para los empleados está su jefe/a?</h2>
+      <label><input type="radio" name="ayuda3" value="Extremadamente fácil" />Extremadamente disponible</label><br />
+      <label><input type="radio" name="ayuda3" value="Muy fácil" />Muy
+        disponible</label><br />
+      <label><input type="radio" name="ayuda3" value="Algo fácil" />Moderadamente
+        disponible</label><br />
+      <label><input type="radio" name="ayuda3" value="No tan fácil" />Poco
+        disponible</label><br />
+      <label><input type="radio" name="ayuda3" value="Nada fácil" />Nada
+        disponible</label><br />
+      <br />
+      <h2>
+        ¿Con qué frecuencia su jefe/a le hace observaciones con respecto a su
+        trabajo?
+      </h2>
+      <label><input type="radio" name="ayuda4" value="Extremadamente fácil" />Con
+        Extremadamente frecuencia</label><br />
+      <label><input type="radio" name="ayuda4" value="Muy fácil" />Con mucha
+        frecuencia</label><br />
+      <label><input type="radio" name="ayuda4" value="Algo fácil" />Con alguna
+        frecuencia</label><br />
+      <label><input type="radio" name="ayuda4" value="No tan fácil" />No con tanta
+        frecuencia</label><br />
+      <label><input type="radio" name="ayuda4" value="Nada fácil" />Con ninguna
+        frecuencia</label><br />
+      <br />
+      <h2>
+        ¿Cuánto mejora su rendimiento después de recibir observaciones de su
+        jefe/a acerca de su trabajo?
+      </h2>
+      <label><input type="radio" name="ayuda5" value="Extremadamente fácil" />Mejora bastante</label><br />
+      <label><input type="radio" name="ayuda5" value="Muy fácil" />Mejora
+        mucho</label><br />
+      <label><input type="radio" name="ayuda5" value="Algo fácil" />Mejora
+        Algo</label><br />
+      <label><input type="radio" name="ayuda5" value="No tan fácil" />Mejora un
+        Poco</label><br />
+      <label><input type="radio" name="ayuda5" value="Nada fácil" />No mejora en
+        absoluto</label><br />
+      <br />
+      <h2>
+        ¿Qué tan consistente es su jefe/a al recompensar a los empleados por
+        realizar un buen trabajo?
+      </h2>
+      <label><input type="radio" name="ayuda6" value="Extremadamente fácil" />Extremadamente consistente</label><br />
+      <label><input type="radio" name="ayuda6" value="Muy fácil" />Muy
+        consistente</label><br />
+      <label><input type="radio" name="ayuda6" value="Algo fácil" />Moderadamente
+        consistente</label><br />
+      <label><input type="radio" name="ayuda6" value="No tan fácil" />Poco
+        consistente</label><br />
+      <label><input type="radio" name="ayuda6" value="Nada fácil" />Nada
+        consistente</label><br />
+      <br />
+      <h2>¿Qué tan razonable son las decisiones tomadas por su jefe/a?</h2>
+      <label><input type="radio" name="ayuda7" value="Extremadamente fácil" />Extremadamente razonables</label><br />
+      <label><input type="radio" name="ayuda7" value="Muy fácil" />Muy
+        razonables</label><br />
+      <label><input type="radio" name="ayuda7" value="Algo fácil" />Algo
+        razonables</label><br />
+      <label><input type="radio" name="ayuda7" value="No tan fácil" />No tan
+        razonables</label><br />
+      <label><input type="radio" name="ayuda7" value="Nada fácil" />Nada
+        razonables</label><br />
+    </div>
+        <!-- Página 3 -->
+        <div class="page">
+            <h2>Gerencia de monitoreo y videovigilancia</h2>
+            <h2>Evaluación de los mandos</h2>
+            <br>
+            <br>
+    
+            
+                <b><label for="instruccion">Esta encuesta es anónima y personal, dirigida al personal de la Dirección de la
+                        Unidad
+                        Estratégica de inteligencia
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    </label>
+                    <br>
+                    <br>
+    
+                    <label for="instruccion2">Agradecemos dar su respuesta con la mayor transparencia
+                        y veracidad a las diversas preguntas del cuestionario, lo cual nos permitirá un acercamiento
+                        a la realidad actual de esta dirección
+                    </label>
+                    <br>
+                    <br>
+                    <label for="instruccion3">Por favor, lea con atención y señale la respuesta que considere acertada
+                    </label></b>
+                    <br>
+                    <br>
+    
+                    <br>
+                    <br>
+                    <div class="formulario">
+    
+                <h2>¿Se toma su jefe/a escucha las opiniones de los empleados al tomar decisiones?</h2>
+                <label><input type="radio" name="ayuda8" value="Extremadamente fácil">Demasiado</label><br>
+                <label><input type="radio" name="ayuda8" value="Muy fácil">Mucho</label><br>
+                <label><input type="radio" name="ayuda8" value="Algo fácil">Lo apropiado</label><br>
+                <label><input type="radio" name="ayuda8" value="No tan fácil">Muy poco</label><br>
+                <label><input type="radio" name="ayuda8" value="Nada fácil">Demasiado poco</label><br>
+                <br>
+                <h2>¿Con qué frecuencia su jefe/a escucha las opiniones de los empleados al tomar decisiones?</h2>
+                <label><input type="radio" name="ayuda9" value="Extremadamente fácil">Con extrema frecuencia</label><br>
+                <label><input type="radio" name="ayuda9" value="Muy fácil">Con mucha frecuencia</label><br>
+                <label><input type="radio" name="ayuda9" value="Algo fácil">Con alguna frecuencia</label><br>
+                <label><input type="radio" name="ayuda9" value="No tan fácil">No con tanta frecuencia</label><br>
+                <label><input type="radio" name="ayuda9" value="Nada fácil">con ninguna frecuencia</label><br>
+                <br>
+                <h2>¿Qué tan fácil es para los empleados estar en desacuerdo con las decisiones tomadas por su jefe?</h2>
+                <label><input type="radio" name="ayuda10" value="Extremadamente fácil">Extremadamente fácil</label><br>
+                <label><input type="radio" name="ayuda10" value="Muy fácil">Muy fácil</label><br>
+                <label><input type="radio" name="ayuda10" value="Algo fácil">Algo fácil</label><br>
+                <label><input type="radio" name="ayuda10" value="No tan fácil">No tan fácil</label><br>
+                <label><input type="radio" name="ayuda10" value="Nada fácil">Nada fácil</label><br>
+                <br>
+                <h2>¿Qué tan digno/a de confianza es su jefe/a?</h2>
+                <label><input type="radio" name="ayuda11" value="Extremadamente fácil">Extremadamente digno/a de confianza </label><br>
+                <label><input type="radio" name="ayuda11" value="Muy fácil">Muy digno/a de confianza</label><br>
+                <label><input type="radio" name="ayuda11" value="Algo fácil">Algo digno/a de confianza</label><br>
+                <label><input type="radio" name="ayuda11" value="No tan fácil">No tan digno/a de confianza</label><br>
+                <label><input type="radio" name="ayuda11" value="Nada fácil">Nada digno/a de confianza</label><br>
+                <br>
+                <h2>¿Qué tan eficazmente su jefe/a emplea los recursos del Organismo?</h2>
+                <label><input type="radio" name="ayuda12" value="Extremadamente fácil">Muy eficazmente</label><br>
+                <label><input type="radio" name="ayuda12" value="Muy fácil">Bastante eficazmente</label><br>
+                <label><input type="radio" name="ayuda12" value="Algo fácil">Algo eficazmente</label><br>
+                <label><input type="radio" name="ayuda12" value="No tan fácil">No tan eficazmente</label><br>
+                <label><input type="radio" name="ayuda12" value="Nada fácil">Nada eficazmente</label><br>
+                <br>
+                <h2>Cuando alguien termina una tarea especialmente bien hecha,¿Con qué frecuencua su jefe/a reconoce este logro?</h2>
+                <label><input type="radio" name="ayuda13" value="Extremadamente fácil">Con extrema frecuencia</label><br>
+                <label><input type="radio" name="ayuda13" value="Muy fácil">Con mucha frecuencia</label><br>
+                <label><input type="radio" name="ayuda13" value="Algo fácil">Con alguna frecuencia</label><br>
+                <label><input type="radio" name="ayuda13" value="No tan fácil">No con tanta frecuencia</label><br>
+                <label><input type="radio" name="ayuda13" value="Nada fácil">Con ninguna frecuencia</label><br>
+                <br>
+                <h2>¿Qué tan profesional es el comportamiento de su jefe/a?</h2>
+                <label><input type="radio" name="ayuda14" value="Extremadamente fácil">Extremadamente profesional</label><br>
+                <label><input type="radio" name="ayuda14" value="Muy fácil">Muy profesional</label><br>
+                <label><input type="radio" name="ayuda14" value="Algo fácil">Algo profesional</label><br>
+                <label><input type="radio" name="ayuda14" value="No tan fácil">No muy profesional</label><br>
+                <label><input type="radio" name="ayuda14" value="Nada fácil">Nada profesional</label><br>
+                <br>
+                <h2>En general, ¿Está satisfecho/a o insatisfecha con su jefe/a?</h2>
+                <label><input type="radio" name="ayuda15" value="Extremadamente fácil">Muy satisfecho/a</label><br>
+                <label><input type="radio" name="ayuda15" value="Muy fácil">satisfecho/a</label><br>
+                <label><input type="radio" name="ayuda15" value="Algo fácil">satisfecho/a</label><br>
+                <label><input type="radio" name="ayuda15" value="No tan fácil">Ni tan satisfecho/a ni insatisfecho/a</label><br>
+                <label><input type="radio" name="ayuda15" value="Nada fácil">Insatisfecho/a</label><br>
+                <label><input type="radio" name="ayuda15" value="Nada fácil">Muy insatisfecho/a</label><br>
+                <br>
+                <h2>En general, ¿Qué tan eficiente es su jefe/a en su trabajo?</h2>
+                <label><input type="radio" name="ayuda16" value="Extremadamente fácil">Extremadamente eficiente</label><br>
+                <label><input type="radio" name="ayuda16" value="Muy fácil">Muy eficiente</label><br>
+                <label><input type="radio" name="ayuda16" value="Algo fácil">Algo eficiente</label><br>
+                <label><input type="radio" name="ayuda16" value="No tan fácil">No tan eficiente </label><br>
+                <label><input type="radio" name="ayuda16" value="Nada fácil">Nada eficiente</label><br>
+    
+                <h2>¿Qué necesita hacer su jefe/a para mejorar su rendimiento?</h2>
+                
+                <textarea name="opiniones" rows="10" cols="175" style="border-color: #cda343;"></textarea>
+                <h4>Espacio libre de expresión (sugerencias, aportes que merecen reconocimiento,
+                    actividades extra en las que has trabajado, contar tus nuevos intereses y/o formación laboral, 
+                   acontecimientos que te parecen incomodos o afecten tu estabilidad dentro del departamento etc.)</h4>
+                
+    
+            </div>
+        </div>
+
+        <section class="paginacion">
+            <ul>
+
+                <li><button type="button" id="prevBtn" onclick="cambiarPagina(-1)">Anterior</button></li>
+                <li><button type="button" id="nextBtn" onclick="cambiarPagina(1)">Siguiente</button></li>
+            </ul>
+        </section>
+
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button type="submit" name="submit">Enviar</button>
+
+    </form>
+
+    <script>
+        
+        
+        let paginaActual = 0;
+        mostrarPagina(paginaActual);
+
+        function cambiarPagina(n) {
+            mostrarPagina(paginaActual += n);
+        }
+
+        function mostrarPagina(n) {
+            const paginas = document.querySelectorAll(".page");
+            if (n >= paginas.length) {
+                paginaActual = paginas.length - 1;
+            }
+            if (n < 0) {
+                paginaActual = 0;
+            }
+            for (let i = 0; i < paginas.length; i++) {
+                paginas[i].style.display = "none";
+            }
+            paginas[paginaActual].style.display = "block";
+            if (paginaActual === 0) {
+                document.getElementById("prevBtn").disabled = true;
+            } else {
+                document.getElementById("prevBtn").disabled = false;
+            }
+            if (paginaActual === paginas.length - 1) {
+                document.getElementById("nextBtn").disabled = true;
+            } else {
+                document.getElementById("nextBtn").disabled = false;
+            }
+        }
+
+        function ocultarMostrar() {
+            var select = document.getElementById("tecnico");
+            var preguntasNombreDiv = document.getElementById("preguntas-nombre");
+            var nombreLabel = document.querySelector(".nombre-label");
+            var nombreInput = document.getElementById("nombre");
+
+            if (select.value === "si") {
+                preguntasNombreDiv.style.display = "block";
+                nombreLabel.style.display = "block";
+                nombreInput.style.display = "block";
+            } else {
+                preguntasNombreDiv.style.display = "none";
+                nombreLabel.style.display = "none";
+                nombreInput.style.display = "none";
+            }
+        }
+
+        var selectTecnico = document.getElementById("tecnico");
+        selectTecnico.addEventListener("change", ocultarMostrar);
+
+        ocultarMostrar();
+        
+    </script>
+</body>
+
+</html>
