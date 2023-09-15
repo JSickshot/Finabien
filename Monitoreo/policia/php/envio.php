@@ -50,7 +50,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $monitorista = $_POST["MONI"];
 
-    // Consulta SQL para insertar datos en la tabla
     $sql = "INSERT INTO formularios_datos (fecha, hora, sucursal, estado, registro, region, camaras, comunicacionCnm, axis, mobotix, grabadorLocal, robo, intrusion, bienesMueblesRobados, bienesMueblesDanados, Z1, Z2, Z3, Z4, Z6, OZ, CA, numPolicia, numPatrulla, nombreOperador, numReporte, atiende, cargo, tipoLlamadaEntrada, tipoLlamadaSalida, descripcionHechos, monitorista) 
             VALUES ('$fecha', '$hora', '$sucursal', '$estado', '$registro', '$region', '$camaras', '$comunicacionCnm', '$axis', '$mobotix', '$grabadorLocal', '$robo', '$intrusion', '$bienesMueblesRobados', '$bienesMueblesDanados', '$z1', '$z2', '$z3', '$z4', '$z6', '$oz', '$ca', '$numPolicia', '$numPatrulla', '$nombreOperador', '$numReporte', '$atiende', '$cargo', '$tipoLlamadaEntrada', '$tipoLlamadaSalida', '$descripcionHechos', '$monitorista')";
 

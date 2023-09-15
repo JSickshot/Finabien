@@ -39,7 +39,7 @@ $username = $_SESSION["username"];
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br><br><br><br><br><br><br><br><br>
-        <a href="../../autoevaluacion/html/todo.html"><button>AutoEvaluación</button></a>
+        <a href="../../autoevaluacion/html/Autoevaluacion.html"><button>AutoEvaluación</button></a>
         <br>
         <a href="../../mando/html/mando.html"><button>Evaluación a los mandos</button></a>
         

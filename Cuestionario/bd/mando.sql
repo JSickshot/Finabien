@@ -1,0 +1,20 @@
+Create table encuesta_mandos(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    servicio text,
+    pregunta1 text,
+    pregunta2 text,
+    pregunta3 text,
+    pregunta4 text,
+    pregunta5 text,
+    pregunta6 text,
+    pregunta7 text,
+    pregunta8 text,
+    pregunta9 text,
+    pregunta10 text,
+    pregunta11 text,
+    pregunta12 text,
+    pregunta13 text,
+    pregunta14 text,
+    pregunta15 text,
+    opiniones varchar(500)
+);
