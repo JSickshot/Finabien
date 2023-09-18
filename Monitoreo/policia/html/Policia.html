@@ -4,7 +4,7 @@
 <head>
     <title>Tablas HTML</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../css/Policiaco.css">
+    <link rel="stylesheet" href="../../CSS/Policiaco.css">
     <script src="../../JavaScript/policiaco.js"></script>
 </head>
 
@@ -29,26 +29,26 @@
             </tr>
             <tr>
                 <td>
-                    <div class="container">
-                        <div class="left-column">
-                            <label for="fecha1">Fecha:</label>
-                            <input type="date" id="fecha1" name="fecha1"><br>
-                            <label for="hora1">Hora:</label>
-                            <input type="time" id="hora1" name="hora1"><br>
-                        </div>
-                        <div class="right-column">
-                            <label for="registro">Numero de Registro:</label>
-                            <input type="text" name="registro" maxlength="8" id="registro" required oninput="obtenerDatos()" autocomplete="off"><br>
-
-                            <label for="sucursal">Nombre de Sucursal:</label>
-                            <input type="text" id="sucursal" name="sucursal" required readonly><br>
-
-                            <label for="gerencia">Estado:</label>
-                            <input type="text" id="gerencia" name="gerencia" required readonly><br>
-
-                            <label for="region">Region:</label>
-                            <input type="text" id="region" name="region" required readonly><br>
-                        </div>
+                    <div class="left-column">
+                        <label for="fecha1">Fecha:</label>
+                        <input type="date" id="fecha1" name="fecha1"><br>
+                        <label for="hora1">Hora:</label>
+                        <input type="time" id="hora1" name="hora1"><br>
+                    </div>
+                </td>
+                <td>
+                    <div class="right-column">
+                        <label for="registro">Numero de Registro:</label>
+                        <input type="text" name="registro" maxlength="8" id="registro" required oninput="obtenerDatos()" autocomplete="off"><br>
+        
+                        <label for="sucursal">Nombre de Sucursal:</label>
+                        <input type="text" id="sucursal" name="sucursal" required readonly><br>
+        
+                        <label for="gerencia">Estado:</label>
+                        <input type="text" id="gerencia" name="gerencia" required readonly><br>
+        
+                        <label for="region">Region:</label>
+                        <input type="text" id="region" name="region" required readonly><br>
                     </div>
                 </td>
             </tr>
@@ -64,47 +64,45 @@
             </tr>
             <tr>
                 <td>
-                    <label for="camaras">Camaras</label><br>
-                    <br>
-                    <label for="axis"><input type="checkbox" id="axis" name="axis">Axis</label><br>
-
-                    <label for="mobotix"><input type="checkbox" id="mobotix" name="mobotix">Mobotix</label><br>
-
-                    <label for="grabador_local"><input type="checkbox" id="grabador_local"
-                            name="grabador_local">Grabador Local</label><br>
-
-                    <br>
-
-                    <label for="camaras">Comunicacion al CNM</label><br>
-                    <br>
-
-                    <label for="siC"><input type="checkbox" id="siC" name="siC">si</label><br>
-
-                    <label for="noC"><input type="checkbox" id="noC" name="noC">no</label><br>
-
-                    <br>
-                    <label for="camaras">Alarma</label><br>
-                    <br>
-
-                    <label for="DSC"><input type="checkbox" id="DSC" name="DSC">DSC</label><br>
-
-                    <label for="Hone"><input type="checkbox" id="Hone" name="Hone">Honeywell</label><br>
-
-                    <br>
-
-                    <label for="camaras">Comunicacion al CNM</label><br>
-                    <br>
-
-                    <label for="sim"><input type="checkbox" id="sim" name="sim">si</label><label
-                        for="nom"><input type="checkbox" id="nom" name="nom">no</label><br>
-
-                    <label for="sim"><input type="checkbox" id="sim" name="sim">si</label><label
-                        for="nom"><input type="checkbox" id="nom" name="nom">no</label><br>
-
-                    <br>
+                    <div class="left-column2">
+                        <b><label for="camaras">Camara</label></b>
+                        <label for="axis"><input type="checkbox" id="axis" name="axis">Axis</label>
+                        <label for="mobotix"><input type="checkbox" id="mobotix" name="mobotix">Mobotix</label><br>
+                        <label for="grabador_local"><input type="checkbox" id="grabador_local" name="grabador_local">Grabador Local</label><br>
+                    </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="right-column2">
+                        <label for="camaras">Comunicacion al CNM</label>
+                        <label for="siC"><input type="checkbox" id="siC" name="siC">si</label>
+                        <label for="noC"><input type="checkbox" id="noC" name="noC">no</label>
+                        <label for="siA"><input type="checkbox" id="siA" name="siA">si</label>
+                        <label for="noA"><input type="checkbox" id="noA" name="noA">no</label><br>
+                    </div>
+                </td>
+                <td>
+                    <div class="left-column3">
+                        <label for="camaras">Alarma</label><br>
+                        <label for="DSC"><input type="checkbox" id="DSC" name="DSC">DSC</label><br>
+                        <label for="Hone"><input type="checkbox" id="Hone" name="Hone">Honeywell</label><br>
+                        </div>
+                        
+                        <div class="right-column3">
+                            <label for="alarmcom">Comunicacion al CNM:</label><br>
+                            <label for="sim"><input type="checkbox" id="sim" name="sim">si</label><br>
+                            <label for="nom"><input type="checkbox" id="nom" name="nom">no</label><br>
+                            <label for="sim"><input type="checkbox" id="sim" name="sim">si</label><br>
+                            <label for="nom"><input type="checkbox" id="nom" name="nom">no</label><br>
+                        </div>
+                    </div>
                 </td>
             </tr>
         </table>
+        
+        
+        
+
         <br>
         <table>
             <tr>
@@ -247,7 +245,7 @@
 
     <script>
         function mostrarAlerta() {
-            alert("El formulario se ha enviado con éxito.");
+            alert("El formulario se ha enviado con  éxito.");
         }
     </script>
 </body>
