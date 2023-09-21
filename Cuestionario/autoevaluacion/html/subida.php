@@ -117,7 +117,8 @@ $stmt = $conn->prepare("INSERT INTO Cuestionario_satisfaccion (
     prueba17, observaciones_prueba17,
     prueba18, observaciones_prueba18, 
     opiniones19 
-) VALUES (?,?,?,?,?,?,?,?,?,?,
+) VALUES (
+?,?,?,?,?,?,?,?,?,?,
 ?,?,?,?,?,?,?,?,?,?,
 ?,?,?,?,?,?,?,?,?,?,
 ?,?,?,?,?,?,?,?,?,?,
@@ -128,7 +129,14 @@ if (!$stmt) {
     die("Error en la preparación de la consulta: " . $conn->error);
 }
 
-$stmt->bind_param("sssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+$stmt->bind_param("
+sssssssss
+sssssssss
+sssssssss
+sssssssss
+sssssssss
+sssssssss
+sss",
     $nombre,
     $pregunta1,
     $pregunta2,
