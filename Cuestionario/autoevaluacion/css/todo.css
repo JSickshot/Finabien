@@ -1,12 +1,7 @@
 body {
-    background-image: url('fondo_encuesta.png'); 
+    background-image: url('fondo-encuesta.png'); 
     background-size: cover; 
-    background-repeat: no-repeat; 
-    font-size: 16px;
-    text-align: center; 
-    margin: 10; 
-    padding: 10; 
-    line-height: 2; 
+    background-repeat: no-repeat;  
 }
 
 

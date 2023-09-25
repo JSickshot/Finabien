@@ -1,7 +1,8 @@
 body {
-    font-size: 16px;
+    background-image: url('fondo-encuesta.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;  
 }
-
 
 .btn-agregar {
     background-color: #00853c;
@@ -43,10 +44,7 @@ body {
     font-size: 16px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
+
 
 .container {
     position: absolute;
@@ -224,33 +222,16 @@ img {
     background-color: #e63f3f; 
 }
 
-.paginacion {
-	margin:20px 0;
+.paginacion button {
+    background-color: #ba9355; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    margin: 5px; 
+    cursor: pointer; 
+    border-radius: 5px; 
 }
 
-.paginacion ul {
-	list-style:none;
-	text-align: center;
-}
-
-.paginacion ul li {
-	display:inline-block;
-	margin-right:10px;
-}
-
-.paginacion ul li a {
-	display:block;
-	padding:10px 20px;
-	color:#fff;
-	background:#00853c;
-	text-decoration: none;
-}
-
-.paginacion ul li a:hover {
-	background:#b39230;
-}
-
-.paginacion ul li .active {
-	background:#00853c;
-	font-weight:bold;
+.paginacion button:hover {
+    background-color: #00853c; 
 }
