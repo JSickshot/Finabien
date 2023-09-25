@@ -164,11 +164,20 @@
                     <label for="eventocomo">Tipo de falla:</label>
                     <select name="eventocomo" id="eventocomo" required>
                         <option value="">Seleccione una opción</option>
+                        <option value="EUSER">ERROR DE USUARIO</option>
                         <option value="FTECNICA">FALLA TECNICA</option>
                         <option value="FEDELECTRI">FALLA ENERGIA DE ELECTRICIDAD</option>
                         <option value="NA">NO APLICA</option>
                     </select><br><br>
+
                     <label for="eventocomo">Se determina evento como:</label>
+                    <select name="eventocomo" id="eventocomo" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="EREAL">REAL</option>
+                        <option value="EFALARM">FALSA ALARMA</option>
+                        <option value="EFAREC">FALSA ALARMA RECURRENTE</option>
+                        <option value="ECONFIRM">POR CONFIRMAR</option>
+                    </select><br><br>
                 </td>
             </tr>
         </table>
