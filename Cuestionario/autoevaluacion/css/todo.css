@@ -3,10 +3,10 @@ body {
     background-size: cover; 
     background-repeat: no-repeat; 
     font-size: 16px;
-    text-align: center; /* Centra todo el texto en el medio */
-    margin: 10; /* Elimina el margen predeterminado del cuerpo */
-    padding: 10; /* Elimina el relleno predeterminado del cuerpo */
-    line-height: 2; /* Ajusta el espaciado entre líneas para una mejor legibilidad */
+    text-align: center; 
+    margin: 10; 
+    padding: 10; 
+    line-height: 2; 
 }
 
 
@@ -39,39 +39,6 @@ thead {
     color: white;
 }
 
-.rating {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.rating input[type="radio"] {
-    display: none;
-}
-
-.rating label {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.rating label:hover {
-    background-color: #ffd700;
-    color: white;
-}
-
-.rating input[type="radio"]:checked + label {
-    background-color: #ffd700;
-    color: white;
-}
-
 .observaciones-cell {
     width: 50%; 
 }
@@ -85,17 +52,17 @@ thead {
 
 
 .paginacion button {
-    background-color: #ba9355; /* Color de fondo */
-    color: #fff; /* Color de texto */
-    border: none; /* Sin bordes */
-    padding: 10px 20px; /* Espaciado interno */
-    margin: 5px; /* Espaciado externo */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    border-radius: 5px; /* Bordes redondeados */
+    background-color: #ba9355; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    margin: 5px; 
+    cursor: pointer; 
+    border-radius: 5px; 
 }
 
 .paginacion button:hover {
-    background-color: #00853c; /* Cambia el color de fondo al pasar sobre el botón */
+    background-color: #00853c; 
 }
 
 
@@ -152,7 +119,7 @@ thead {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border;
     
 }
