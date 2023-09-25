@@ -19,26 +19,28 @@ function limpiarDatos($dato)
 }
 
 $servicio = limpiarDatos($_POST['servicio']);
-$ayuda2 = limpiarDatos($_POST['ayuda2']);
-$ayuda3 = limpiarDatos($_POST['ayuda3']);
-$ayuda4 = limpiarDatos($_POST['ayuda4']);
-$ayuda5 = limpiarDatos($_POST['ayuda5']);
-$ayuda6 = limpiarDatos($_POST['ayuda6']);
-$ayuda7 = limpiarDatos($_POST['ayuda7']);
-$ayuda8 = limpiarDatos($_POST['ayuda8']);
-$ayuda9 = limpiarDatos($_POST['ayuda9']);
-$ayuda10 = limpiarDatos($_POST['ayuda10']);
-$ayuda11 = limpiarDatos($_POST['ayuda11']);
-$ayuda12 = limpiarDatos($_POST['ayuda12']);
-$ayuda13 = limpiarDatos($_POST['ayuda13']);
-$ayuda14 = limpiarDatos($_POST['ayuda14']);
-$ayuda15 = limpiarDatos($_POST['ayuda15']);
-$ayuda16 = limpiarDatos($_POST['ayuda16']);
+$pregunta1 = limpiarDatos($_POST['pregunta1']);
+$pregunta2 = limpiarDatos($_POST['pregunta2']);
+$pregunta3 = limpiarDatos($_POST['pregunta3']);
+$pregunta4 = limpiarDatos($_POST['pregunta4']);
+$pregunta4 = limpiarDatos($_POST['pregunta4']);
+$pregunta5 = limpiarDatos($_POST['pregunta5']);
+$pregunta6 = limpiarDatos($_POST['pregunta6']);
+$pregunta7 = limpiarDatos($_POST['pregunta7']);
+$pregunta8 = limpiarDatos($_POST['pregunta8']);
+$pregunta9 = limpiarDatos($_POST['pregunta9']);
+$pregunta10 = limpiarDatos($_POST['pregunta10']);
+$pregunta11 = limpiarDatos($_POST['pregunta11']);
+$pregunta12 = limpiarDatos($_POST['pregunta12']);
+$pregunta13 = limpiarDatos($_POST['pregunta13']);
+$pregunta14 = limpiarDatos($_POST['pregunta14']);
+$pregunta15 = limpiarDatos($_POST['pregunta15']);
 $opiniones = limpiarDatos($_POST['opiniones']);
 
 $stmt = $conn->prepare("INSERT INTO encuesta_mandos (
-    servicio, ayuda2,ayuda3,ayuda4,ayuda5,ayuda6,ayuda7,ayuda8,ayuda9,ayuda10,
-    ayuda11,ayuda12,ayuda13,ayuda14,ayuda15,ayuda16,opiniones) 
+    servicio, pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, pregunta6,
+    pregunta7, pregunta8, pregunta9, pregunta10, pregunta11,
+    pregunta12, pregunta13, pregunta14, pregunta15, opiniones) 
     VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 
 if (!$stmt) {
@@ -46,8 +48,9 @@ if (!$stmt) {
 }
 
 $stmt->bind_param("sssssssssssssssss",
-    $servicio, $ayuda2,$ayuda3,$ayuda4,$ayuda5,$ayuda6,$ayuda7,$ayuda8,$ayuda9,
-    $ayuda10,$ayuda11,$ayuda12,$ayuda13,$ayuda14,$ayuda15,$ayuda16,$opiniones
+    $servicio,$pregunta1,$pregunta2, $pregunta3, $pregunta4,$pregunta5,
+    $pregunta6,$pregunta7,$pregunta8,$pregunta9,$pregunta10,
+    $pregunta11,$pregunta12,$pregunta13,$pregunta14,$pregunta15,$opiniones
 );
 
 

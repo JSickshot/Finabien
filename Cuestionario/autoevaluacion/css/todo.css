@@ -1,9 +1,14 @@
-
 body {
     background-image: url('fondo_encuesta.png'); 
     background-size: cover; 
     background-repeat: no-repeat; 
+    font-size: 16px;
+    text-align: center; /* Centra todo el texto en el medio */
+    margin: 10; /* Elimina el margen predeterminado del cuerpo */
+    padding: 10; /* Elimina el relleno predeterminado del cuerpo */
+    line-height: 2; /* Ajusta el espaciado entre líneas para una mejor legibilidad */
 }
+
 
 .container {
     max-width: 800px;
@@ -78,10 +83,6 @@ thead {
     box-sizing: content-box;
 }
 
-.paginacion {
-    text-align: center;
-    margin-top: 20px;
-}
 
 .paginacion button {
     background-color: #ba9355; /* Color de fondo */
@@ -97,9 +98,7 @@ thead {
     background-color: #00853c; /* Cambia el color de fondo al pasar sobre el botón */
 }
 
-body {
-    font-size: 16px;
-}
+
 
 
 .btn-agregar {
@@ -140,19 +139,6 @@ body {
     border-radius: 4px;
     background-color: transparent;
     font-size: 16px;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    position: absolute;
-    display: flex;
-    align-items: left;
-    width: 200px;
-    margin: 0 auto;
 }
 
 .image {
@@ -324,9 +310,6 @@ img {
 }
 
 
-body {
-    font-size: 16px;
-}
 
 
 .btn-agregar {
@@ -369,10 +352,6 @@ body {
     font-size: 16px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
 
 .container {
     position: absolute;
@@ -392,8 +371,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border;
     
 }
@@ -638,3 +616,4 @@ img {
 button[type="submit"]:hover {
     background-color: #00853c; 
 }
+

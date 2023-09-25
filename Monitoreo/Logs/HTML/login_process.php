@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $sql = "SELECT * FROM users WHERE usuario = ? AND pass = ?";
+    $sql = "SELECT * FROM user_monitoreo WHERE usuario = ? AND pass = ?";
     $stmt = $conn->prepare($sql);
 
     if (!$stmt) {
