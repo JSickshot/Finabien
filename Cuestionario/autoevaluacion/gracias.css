@@ -1,0 +1,29 @@
+body {
+    background-image: url('fondo_terminado.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 97vh; 
+}
+
+.contenedor {
+    margin-bottom: 20px; 
+}
+
+.boton {
+    margin-bottom: 20px;
+    padding: 39px 90px; 
+    background-color: #b39230; 
+    color: #fff; 
+    text-decoration: none;
+    border: none;
+    border-radius: 20px; 
+    font-size: 20px;
+}
+
+.boton:hover {
+    background-color: #00853c; 
+}
