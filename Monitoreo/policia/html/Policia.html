@@ -83,17 +83,17 @@
                 </td>
                 <td>
                     <div class="left-column3">
-                        <label for="camaras">Alarma</label><br>
+                        <label for="Alarma">Alarma</label><br>
                         <label for="DSC"><input type="checkbox" id="DSC" name="DSC">DSC</label><br>
                         <label for="Hone"><input type="checkbox" id="Hone" name="Hone">Honeywell</label><br>
                         </div>
                         
                         <div class="right-column3">
                             <label for="alarmcom">Comunicacion al CNM:</label><br>
-                            <label for="sim"><input type="checkbox" id="sim" name="sim">si</label><br>
-                            <label for="nom"><input type="checkbox" id="nom" name="nom">no</label><br>
-                            <label for="sim"><input type="checkbox" id="sim" name="sim">si</label><br>
-                            <label for="nom"><input type="checkbox" id="nom" name="nom">no</label><br>
+                            <label for="sim"><input type="checkbox" id="sim" name="sidsc">si</label><br>
+                            <label for="nom"><input type="checkbox" id="nom" name="nodsc">no</label><br>
+                            <label for="sim"><input type="checkbox" id="sim" name="sih">si</label><br>
+                            <label for="nom"><input type="checkbox" id="nom" name="noh">no</label><br>
                         </div>
                     </div>
                 </td>
@@ -170,8 +170,8 @@
                         <option value="NA">NO APLICA</option>
                     </select><br><br>
 
-                    <label for="eventocomo">Se determina evento como:</label>
-                    <select name="eventocomo" id="eventocomo" required>
+                    <label for="event">Se determina evento como:</label>
+                    <select name="determina" id="falla" required>
                         <option value="">Seleccione una opción</option>
                         <option value="EREAL">REAL</option>
                         <option value="EFALARM">FALSA ALARMA</option>
@@ -247,6 +247,8 @@
             <option value="PCASTRO">PASCUAL CASTRO ZAVALA</option>
             <option value="PMEJIA">PABLO MEJIA TORIZ</option>
             <option value="RCASTAÑEDA">ROBERTO CARLOS ORTIZ CASTAÑEDA</option>
+            <option value="JLUIS">JUAN LUIS GONZALEZ PRIETO</option>
+            <option value="LEDUARDO">LUIS EDUARDO SANCHEZ TOSCANO</option>
         </select><br>
         <label for="MONITORISTA">Monitorista</label><br><br>
         <button type="submit" name="submit" onclick="mostrarAlerta()">Enviar</button>
