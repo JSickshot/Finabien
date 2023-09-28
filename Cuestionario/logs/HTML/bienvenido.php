@@ -6,7 +6,7 @@ if (!isset($_SESSION["username"])) {
   exit();
 }
 
-$username = $_SESSION["username"];
+
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ $username = $_SESSION["username"];
   <div class="center-container">
     <div class="header">
       <h1>Bienvenido
-        <?php echo $username; ?><br>
+       
       </h1>
     </div>
     <br>
@@ -44,7 +44,6 @@ $username = $_SESSION["username"];
         <br>
         <a href="../../mando/html/mando.html"><button>Evaluación a los mandos</button></a>
         <br>
-        <a href="cerrar.php"><button>Cerrar sesión</button></a>
       </div>
       
     </div>

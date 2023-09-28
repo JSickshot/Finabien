@@ -22,7 +22,6 @@ $username = $_SESSION["username"];
   <div class="center-container">
     <div class="header">
       <h1>Bienvenido
-        <?php echo $username; ?>
       </h1>
       <br>
     </div>

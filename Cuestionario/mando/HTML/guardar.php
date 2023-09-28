@@ -1,3 +1,14 @@
+/* 
+$host = "localhost";
+$port = "5432";
+$dbname = "finabien";
+$user = "tu_usuario";
+$password = "tu_contraseña";
+
+Conexión a PostgreSQL
+$conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
+*/
+
 <?php
 $servername = "localhost";
 $username = "root";
