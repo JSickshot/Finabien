@@ -3,7 +3,7 @@
 
 <head>
     <title>Centro de monitoreo</title>
-    <link rel="stylesheet" href="css/logins_proof.css">
+    <link rel="stylesheet" href="../css/logins_proof.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
                 echo '<script>alert("Usuario o contraseña incorrectos.");</script>';
             }
             ?>
-            <form action="logins_process" method="post">
+            <form action="login_process.php" method="post">
                 <label for="username">Usuario:</label>
                 <input type="text" name="username" required><br>
                 <label for="password">Contraseña:</label>

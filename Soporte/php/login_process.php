@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once 'Conexion/db_config.php';
+require_once 'db_config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: bienvenido.php"); 
         exit();
     } else {
-        
+
         header("Location: login.php?error=1");
         exit();
     }
