@@ -57,6 +57,7 @@ body {
 }
 
 .image {
+    background-image: url("../imagenes/logo-05.png");
     position: right;
     right: 100;
     max-width: 500px;

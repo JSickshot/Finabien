@@ -1,5 +1,3 @@
-
-
 CREATE TABLE users (
     ID INT,
 	usuario varchar (25),

@@ -324,4 +324,30 @@ HTML;
     }
 }
 
+$registro = $_POST["registro"]; 
+
+$sql = "SELECT gerencia, sucursal FROM inventario WHERE registro = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("s", $registro);
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($result->num_rows == 1) {
+    $row = $result->fetch_assoc();
+    $gerencia = $row["gerencia"];
+    $sucursal = $row["sucursal"];
+} else {
+    $gerencia = "No se encontraron datos";
+    $sucursal = "No se encontraron datos";
+}
+
+$response = array(
+    'gerencia' => $gerencia,
+    'sucursal' => $sucursal
+);
+
+header('Content-Type: application/json');
+echo json_encode($response);
+
+
 ?>

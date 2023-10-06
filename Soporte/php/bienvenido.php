@@ -21,7 +21,7 @@ $username = $_SESSION["username"];
 
 
     <p></p>
-    <a href="../html/bitacora-mantenimiento.html"><button>Bitácora de Mantenimiento</button></a>
+    <a href="bitacora-mantenimiento.php"><button>Bitácora de Mantenimiento</button></a>
 
 
     <br>

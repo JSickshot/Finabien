@@ -1,4 +1,4 @@
- <?php
+<?php
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";
@@ -10,7 +10,7 @@ if ($conn->connect_error) {
     die("Error de conexión a la base de datos: " . $conn->connect_error);
 }
 
-$registro = $_POST["registro"]; 
+$registro = $_POST["registro"];
 
 $sql = "SELECT gerencia, sucursal FROM inventario WHERE registro = ?";
 $stmt = $conn->prepare($sql);
@@ -22,6 +22,7 @@ if ($result->num_rows == 1) {
     $row = $result->fetch_assoc();
     $gerencia = $row["gerencia"];
     $sucursal = $row["sucursal"];
+
 } else {
     $gerencia = "No se encontraron datos";
     $sucursal = "No se encontraron datos";
@@ -29,7 +30,8 @@ if ($result->num_rows == 1) {
 
 $response = array(
     'gerencia' => $gerencia,
-    'sucursal' => $sucursal
+    'sucursal' => $sucursal,
+    
 );
 
 header('Content-Type: application/json');

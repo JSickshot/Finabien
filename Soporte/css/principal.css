@@ -81,14 +81,11 @@ button {
 
 
   body {
-    margin: 0;
-    padding: 0;
-    background-image: url('https://www.gob.mx/cms/uploads/identity/image/41358/Banner_Principal.jpg');
-    background-size: cover;
-    background-position: center center;
+    background-image: url("../imagenes/inicio.jpeg");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+    background-position: center;
+    margin: 0; 
 }
 
 .image-container {

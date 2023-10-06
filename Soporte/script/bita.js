@@ -68,20 +68,20 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"
 
     });
 
-    
+
 
     function obtenerDatos() {
         var registro = document.getElementById("registro").value;
         console.log("Función obtenerDatos() llamada."); 
         console.log("Valor de REGISTRO en JavaScript:", registro);
-    
+
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function () {
             if (xhr.readyState === XMLHttpRequest.DONE) {
                 if (xhr.status === 200) {
                     var data = JSON.parse(xhr.responseText);
                     console.log("Respuesta JSON:", data); 
-    
+
                     document.getElementById("gerencia").value = data.gerencia;
                     document.getElementById("sucursal").value = data.sucursal;
                 } else {
@@ -89,12 +89,8 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"
                 }
             }
         };
-    
+
         xhr.open("POST", "obtener_datos.php", true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.send("registro=" + encodeURIComponent(registro));
     }
-    
-  
-
-    
