@@ -63,6 +63,7 @@
 
             <input type="checkbox" name="preventivo" id="checkbox-preventivo" style="margin-right: 10px;">
             <label for="checkbox-preventivo">Preventivo</label>
+
         </div>
 
             <div class="rectangulo">
@@ -242,8 +243,8 @@
             }
 
             </script>
-        </form>>
-    </form>>
+        </form>
+    </form>
 </body>
 
 </html>

@@ -17,14 +17,16 @@ $username = $_SESSION["username"];
 
 </head>
 <body>
-    <h1>Bienvenido <?php echo $username; ?> <br> a financiera para el bienestar</h1>
+    
 
-
+   
     <p></p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    
     <a href="bitacora-mantenimiento.php"><button>Bitácora de Mantenimiento</button></a>
 
 
-    <br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <a class="logout-btn" href="cerrar.php">Cerrar sesión</a>
     <div class="image-container">
     </div>
