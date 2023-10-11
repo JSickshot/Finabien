@@ -9,7 +9,7 @@
 <body>
     <div class="login-container">
         <div class="login-box">
-            <h2>centro nacional de monitoreo</h2>
+            <h2>Soporte Técnico</h2>
             <?php
             if (isset($_GET["error"]) && $_GET["error"] === "1") {
                 echo '<script>alert("Usuario o contraseña incorrectos.");</script>';
