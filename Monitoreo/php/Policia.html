@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tablas HTML</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/Policiaco.css">
+    <script src="../JavaScript/policiaco.js"></script>
+</head>
+
+<body>
+    <h2>Nota informativa</h2>
+    <form action="enviar.php" method="post">
+        <label for="fecha">Fecha:</label><br>
+        <input type="text" id="fecha" name="fecha" readonly><br>
+
+        <label for="hora">Hora:</label><br>
+        <input type="text" id="hora" name="hora" readonly><br>
+
+        <label for="folio">Folio:</label><br>
+        <input type="text" id="folio" name="folio" readonly><br>
+
+        <h2>Ing. Alejandro Melo</h2>
+        <table>
+            <tr>
+                <td colspan="2" class="blue-box">
+                    <h2>Datos Generales</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="left-column">
+                        <label for="fecha1">Fecha:</label>
+                        <input type="date" id="fecha1" name="fecha1"><br>
+                        <label for="hora1">Hora:</label>
+                        <input type="time" id="hora1" name="hora1"><br>
+                    </div>
+                </td>
+                <td>
+                    <div class="right-column">
+                        <label for="registro">Numero de Registro:</label>
+                        <input type="text" name="registro" maxlength="8" id="registro" required oninput="obtenerDatos()" autocomplete="off"><br>
+        
+                        <label for="sucursal">Nombre de Sucursal:</label>
+                        <input type="text" id="sucursal" name="sucursal" required readonly><br>
+        
+                        <label for="gerencia">Estado:</label>
+                        <input type="text" id="gerencia" name="gerencia" required readonly><br>
+        
+                        <label for="region">Region:</label>
+                        <input type="text" id="region" name="region" required readonly><br>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table>
+            <tr>
+                <td colspan="2" class="blue-box">
+                    <h2>Ficha Tecnica</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="left-column2">
+                        <b><label for="camaras">Camara</label></b>
+                        <label for="axis"><input type="checkbox" id="axis" name="axis">Axis</label>
+                        <label for="mobotix"><input type="checkbox" id="mobotix" name="mobotix">Mobotix</label><br>
+                        <label for="grabador_local"><input type="checkbox" id="grabador_local" name="grabador_local">Grabador Local</label><br>
+                    </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="right-column2">
+                        <label for="camaras">Comunicacion al CNM</label>
+                        <label for="siC"><input type="checkbox" id="siC" name="siC">si</label>
+                        <label for="noC"><input type="checkbox" id="noC" name="noC">no</label>
+                        <label for="siA"><input type="checkbox" id="siA" name="siA">si</label>
+                        <label for="noA"><input type="checkbox" id="noA" name="noA">no</label><br>
+                    </div>
+                </td>
+                <td>
+                    <div class="left-column3">
+                        <label for="Alarma">Alarma</label><br>
+                        <label for="DSC"><input type="checkbox" id="DSC" name="DSC">DSC</label><br>
+                        <label for="Hone"><input type="checkbox" id="Hone" name="Hone">Honeywell</label><br>
+                        </div>
+                        
+                        <div class="right-column3">
+                            <label for="alarmcom">Comunicacion al CNM:</label><br>
+                            <label for="sim"><input type="checkbox" id="sim" name="sidsc">si</label><br>
+                            <label for="nom"><input type="checkbox" id="nom" name="nodsc">no</label><br>
+                            <label for="sim"><input type="checkbox" id="sim" name="sih">si</label><br>
+                            <label for="nom"><input type="checkbox" id="nom" name="noh">no</label><br>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        
+        
+
+        <br>
+        <table>
+            <tr>
+                <td colspan="2" class="blue-box">
+                    <h2>Evento</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="rob"><input type="checkbox" id="rob" name="rob">Robo</label>
+                    <label for="intrusion"><input type="checkbox" id="intrusion" name="intrusion">Intrusion</label><br><br>
+                    <label for="Bmuebels"><input type="checkbox" id="Bmuebels" name="muebles">Bienes muebles
+                        robados</label>
+                    <label for="dano"><input type="checkbox" id="dano" name="dano">Bienes muebles dañados</label><br><br>
+                    <label for="Montorobo">Monto Aproximado de robo:</label>
+                    <input type="text" id="Montorobo" name="Montorobo"><br><br>
+                    <label for="bienesymuebles">Describa-Bienes Muebles Robados/Dañados:</label>
+                    <input type="text" id="bienesymuebles" name="bienesymuebles"><br><br>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td colspan="2" class="blue-box">
+                    <h2>Señal de alarma recibida</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Z1"><input type="checkbox" id="Z1" name="Z1">Z1</label><br>
+                    <label for="Z2"><input type="checkbox" id="Z2" name="Z2">Z2</label><br>
+                    <label for="Z3"><input type="checkbox" id="Z3" name="Z3">Z3</label><br>
+                    <label for="Z4"><input type="checkbox" id="Z4" name="Z4">Z4</label><br>
+                    <label for="Z6"><input type="checkbox" id="Z6" name="Z6">Z6</label><br>
+                    <label for="OZ"><input type="checkbox" id="OZ" name="OZ">OZ</label><br>
+                    <label for="CA"><input type="checkbox" id="CA" name="CA">CA</label><br><br>
+                    <h3>Zonas Activadas</h3><br>
+                    <select name="maproxrobo" id="maproxrobo" >
+                        <option value="">Seleccione una opción</option>
+                        <option value="PPRINCIPAL">Puerta Principal</option>
+                        <option value="PSECUNDARIA">Puerta secundaria</option>
+                        <option value="PERIMETRO1">Perimetro 1</option>
+                        <option value="PERIMETRO2">Perimetro 2</option>
+                        <option value="CAMAGO">CODIGO AMAGO</option>
+                        <option value="BTPANICO">BOTON DE PANICO</option>
+                        <option value="LBATERY">LOW BATERY</option>
+                        <option value="APFAIL">AC POWER FAIL</option>
+                        <option value="BDPANICO">BOTON DE PANICO(LLAVERO)</option>
+                        <option value="BTRAMPA1">BILLETE TRAMPA VENTANILLA 1</option>
+                        <option value="BTRAMAPA2">BILLETE TRAMPA VENTANILLA 2</option>
+                        <option value="RCRISTAL">RUPTURA DE CRISTAL</option>
+                        <option value="SHUMO">SENSOR DE HUMO</option>
+                        <option value="TSIRENA">TRAMPER DE SIRENA</option>
+                        <option value="VZONAS">VARIAS ZONAS</option>
+                    </select><br><br>
+                    <label for="tfalla">Monto Aproximado de robo:</label>
+                    <input type="text" id="tfalla" name="tfalla"><br><br>
+                    <label for="eventocomo">Tipo de falla:</label>
+                    <select name="eventocomo" id="eventocomo" >
+                        <option value="">Seleccione una opción</option>
+                        <option value="EUSER">ERROR DE USUARIO</option>
+                        <option value="FTECNICA">FALLA TECNICA</option>
+                        <option value="FEDELECTRI">FALLA ENERGIA DE ELECTRICIDAD</option>
+                        <option value="NA">NO APLICA</option>
+                    </select><br><br>
+
+                    <label for="event">Se determina evento como:</label>
+                    <select name="determina" id="falla" >
+                        <option value="">Seleccione una opción</option>
+                        <option value="EREAL">REAL</option>
+                        <option value="EFALARM">FALSA ALARMA</option>
+                        <option value="EFAREC">FALSA ALARMA RECURRENTE</option>
+                        <option value="ECONFIRM">POR CONFIRMAR</option>
+                    </select><br><br>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td colspan="2" class="blue-box">
+                    <h2>Solicitud de Apoyo Policiaco</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="NPOLICIA" name="NPOLICIA"><br>
+                    <label for="NPOLICIA">Numero de policia</label><br><br>
+                    <input type="text" id="NPATRULLA" name="NPATRULLA"><br>
+                    <label for="NPATRULLA">Numero de patrulla</label><br><br>
+                    <input type="text" id="NOPERADOR" name="NOPERADOR"><br>
+                    <label for="NOPERADOR">Nombre del Operador</label><br><br>
+                    <input type="text" id="NREPORTE" name="NREPORTE"><br>
+                    <label for="NREPORTE">Numero de reporte</label><br><br>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td colspan="2" class="blue-box">
+                    <h2>Datos de la llamada Telefonica</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ATT">ATIENDE</label>
+                    <input type="text" id="ATT" name="ATT"><br><br>
+                    <label for="cargo">CARGO</label>
+                    <select name="cargo" id="cargo" >
+                        <option value="">Seleccione una opción</option>
+                        <option value="JEFEDESUCURSAL">JEFE DE SUCURSAL</option>
+                        <option value="ENCARGADO">ENCARGADO</option>
+                        <option value="COORDINADOR">COORDINADOR</option>
+                    </select><br><br>
+                    <h3>Tipo de llamada</h3>
+                    <label for="ENTRADA"><input type="checkbox" id="ENTRADA" name="ENTRADA">Entrada</label>
+                    <label for="SALIDA"><input type="checkbox" id="SALIDA" name="SALIDA">Salida</label><br><br>
+                    <h3>DESCRIPCIÓN DE LOS HECHOS / OBSERVACIONES</h3>
+                    <input type="text" id="HECHOS" name="HECHOS"><br><br>
+                </td>
+            </tr>
+        </table><br><br>
+        <label for="MONI">Atentamente</label><br><br><br>
+        <select name="MONITORISTA" id="MONI" >
+            <option value="">Seleccione una opción</option>
+            <option value="ASANTOS">ALEJANDRO SANTOS ZARCO</option>
+            <option value="BDIAZ">BERENICE DIAZ OLIVARES</option>
+            <option value="EGONZALO">EDGAR GONZALO SOTO BUENDIA</option>
+            <option value="EMARGARITA">EMMA MARGARITA DIAZ PONCE</option>
+            <option value="FRAMIREZ">FERNANDO DAVID RAMIREZ GONZALEZ</option>
+            <option value="FAGUIRRE">FRANCISCO EZEQUIEL AGUIRRE GUADARRAMA</option>
+            <option value="IORTEGA">ILSE IVONNE ORTEGA HIDALGO</option>
+            <option value="JIBARRA">JAVIER IBARRA PEREZ</option>
+            <option value="JVERGARA">JOSE JUAN VERGARA ALONSO</option>
+            <option value="JCAZARES">JOSE LUIS CAZARES GAYOSSO</option>
+            <option value="LFLORES">LORENA GUADALUPE FLORES MANRIQUE</option>
+            <option value="MMEDINA">MARIO ALBERTO DE LA TORRE MEDINA</option>
+            <option value="MMORALES">MERCEDES MORALES MORALES</option>
+            <option value="MALCANTAR">MOISES ALCANTAR DELGADO</option>
+            <option value="PCASTRO">PASCUAL CASTRO ZAVALA</option>
+            <option value="PMEJIA">PABLO MEJIA TORIZ</option>
+            <option value="RCASTAÑEDA">ROBERTO CARLOS ORTIZ CASTAÑEDA</option>
+            <option value="JLUIS">JUAN LUIS GONZALEZ PRIETO</option>
+            <option value="LEDUARDO">LUIS EDUARDO SANCHEZ TOSCANO</option>
+        </select><br>
+        <label for="MONITORISTA">Monitorista</label><br><br>
+        <button type="submit" name="submit" onclick="mostrarAlerta()">Enviar</button>
+    </form>
+
+    <script>
+        function mostrarAlerta() {
+            alert("El formulario se ha enviado con  éxito.");
+        }
+    </script>
+</body>
+
+</html>
