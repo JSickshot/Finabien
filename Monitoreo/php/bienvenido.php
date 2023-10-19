@@ -35,7 +35,7 @@ $username = $_SESSION["username"];
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br><a href="policia.html"><button>Policiaco</button></a>
-        <a href=""><button>Nota informativa</button></a>
+        <a href="nota-info.html"><button>Nota informativa</button></a>
         <a href="cerrar.php"><button>Cerrar sesión</button></a>
       </div>
       
