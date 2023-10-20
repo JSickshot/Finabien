@@ -66,34 +66,36 @@
                 <td>
                     <div class="left-column2">
                         <b><label for="camaras">Camara</label></b>
-                        <label for="axis"><input type="checkbox" id="axis" name="axis">Axis</label>
-                        <label for="mobotix"><input type="checkbox" id="mobotix" name="mobotix">Mobotix</label><br>
-                        <label for="grabador_local"><input type="checkbox" id="grabador_local" name="grabador_local">Grabador Local</label><br>
+                        <label><input type="radio" name="Camaras" value="Camaras">Axis</label>
+                        <label><input type="radio" name="Camaras" value="camaras">Mobotix</label>
+                        <label><input type="radio" name="Camaras" value="camaras">Grabador Local</label>
                     </div>
                     </div>
                 </td>
                 <td>
                     <div class="right-column2">
                         <label for="camaras">Comunicacion al CNM</label>
-                        <label for="siC"><input type="checkbox" id="siC" name="siC">si</label>
-                        <label for="noC"><input type="checkbox" id="noC" name="noC">no</label>
-                        <label for="siA"><input type="checkbox" id="siA" name="siA">si</label>
-                        <label for="noA"><input type="checkbox" id="noA" name="noA">no</label><br>
+                        <label><input type="radio" name="aCamera" value="aCamera">Si</label>
+                        <label><input type="radio" name="aCamera" value="aCamera">No</label>
+                        <label><input type="radio" name="mcamara" value="mcamara">Si</label>
+                        <label><input type="radio" name="mcamara" value="mcamara">No</label>
+                    <br>
                     </div>
                 </td>
                 <td>
                     <div class="left-column3">
                         <label for="Alarma">Alarma</label><br>
-                        <label for="DSC"><input type="checkbox" id="DSC" name="DSC">DSC</label><br>
-                        <label for="Hone"><input type="checkbox" id="Hone" name="Hone">Honeywell</label><br>
+                        <label><input type="radio" name="DSC" value="ADSC">Si</label>
+                        <label><input type="radio" name="DSC" value="ADSC">No</label><br>
                         </div>
                         
                         <div class="right-column3">
-                            <label for="alarmcom">Comunicacion al CNM:</label><br>
-                            <label for="sim"><input type="checkbox" id="sim" name="sidsc">si</label><br>
-                            <label for="nom"><input type="checkbox" id="nom" name="nodsc">no</label><br>
-                            <label for="sim"><input type="checkbox" id="sim" name="sih">si</label><br>
-                            <label for="nom"><input type="checkbox" id="nom" name="noh">no</label><br>
+                        <label for="alarmcom">Comunicacion al CNM:</label><br>
+                        <label><input type="radio" name="smobotix" value="smobotix">Si</label>
+                        <label><input type="radio" name="smobotix" value="smobotix">No</label>
+                        <label><input type="radio" name="sgrabador" value="sgrabador">Si</label>
+                        <label><input type="radio" name="sgrabador" value="sgrabador">No</label><br>
+                        
                         </div>
                     </div>
                 </td>
@@ -113,10 +115,10 @@
             <tr>
                 <td>
                     <label for="rob"><input type="checkbox" id="rob" name="rob">Robo</label>
-                    <label for="intrusion"><input type="checkbox" id="intrusion" name="intrusion">Intrusion</label><br><br>
-                    <label for="Bmuebels"><input type="checkbox" id="Bmuebels" name="muebles">Bienes muebles
+                    <label for="intrusion"><input type="radio" name="intrusion">Intrusion</label><br><br>
+                    <label for="Bmuebels"><input type="radio" name="muebles">Bienes muebles
                         robados</label>
-                    <label for="dano"><input type="checkbox" id="dano" name="dano">Bienes muebles dañados</label><br><br>
+                    <label for="dano"><input type="radio" name="dano">Bienes muebles dañados</label><br><br>
                     <label for="Montorobo">Monto Aproximado de robo:</label>
                     <input type="text" id="Montorobo" name="Montorobo"><br><br>
                     <label for="bienesymuebles">Describa-Bienes Muebles Robados/Dañados:</label>
