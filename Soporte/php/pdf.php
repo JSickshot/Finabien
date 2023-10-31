@@ -25,8 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $tecnico = $_POST["tecnico"];
     $correctivo_checkbox = isset($_POST["correctivo"])  ? $_POST["correctivo"] : "";
     $preventivo_checkbox = isset($_POST["preventivo"]) ? $_POST["preventivo"] : "";
-    $revision_camaras = isset($_POST["servicio"]) && in_array("revision_camaras", $_POST["servicio"]) ? "on" : "off";
-    $limpieza_camaras = isset($_POST["servicio"]) && in_array("limpieza_camaras", $_POST["servicio"]) ? "on" : "off";
+    $revision_camaras = isset($_POST["servicio"]) && in_array("revision_camaras", $_POST["servicio"]) ? "si" : "no";
+    $limpieza_camaras = isset($_POST["servicio"]) && in_array("limpieza_camaras", $_POST["servicio"]) ? "si" : "no";
     $limpieza_sistema_alarmas = isset($_POST["servicio"]) && in_array("limpieza_sistema_alarmas", $_POST["servicio"]) ? "on" : "off";
     $observaciones = $_POST["observaciones"];
 
@@ -291,7 +291,6 @@ HTML;
 
     <h2>Observaciones:</h2>
     <p>$observaciones</p>
-    <hr>
 
     <div class="formulario">
                 <div class="form-group">
