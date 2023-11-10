@@ -13,19 +13,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     $stmt = $conn->prepare("INSERT INTO datos_formulario (
-        fecha, hora, folio, registro, 
-        fecha1, hora1, sucursal, gerencia, 
-        region, camaras, axis, mobotix, 
-        grabador_local, siC, noC,siA, 
-        noA, DSC, Hone, sidsc, 
-        nodsc, sih,noh, rob, 
-        intrusion, Bmuebles, dano, Montorobo, 
-        bienesymuebles, Z1, Z2, Z3,
-        Z4, Z6, OZ, CA, 
-        maproxrobo, tfalla, eventocomo, NPOLICIA, 
-        NPATRULLA, NOPERADOR, NREPORTE, ATT, 
-        cargo, tipo_llamada_entrada, tipo_llamada_salida, DESCHECHOS,
-        MONITORISTA)
+        fecha, hora, folio, registro, fecha1,
+        hora1, sucursal, gerencia, region, camaras, 
+        axis, mobotix, grabador_local, siC, noC,
+        siA, noA, DSC, Hone, sidsc, 
+        nodsc, sih, noh, rob, intrusion, 
+        Bmuebles, dano, Montorobo, bienesymuebles, Z1, 
+        Z2, Z3, Z4, Z6, OZ, 
+        CA, maproxrobo, tfalla, eventocomo, NPOLICIA, 
+        NPATRULLA, NOPERADOR, NREPORTE, ATT, cargo, 
+        tipo_llamada_entrada, tipo_llamada_salida, DESCHECHOS, MONITORISTA
+        )
         VALUES (
             ?,?,?,?,?,?,?,?,?,?, 
             ?,?,?,?,?,?,?,?,?,?, 
@@ -44,21 +42,18 @@ if (!$stmt) {
     ssssssssss
     ssssssssss
     sssssssss
-    sssssss
     ",
-    $fecha, $hora, $folio, $registro, 
-        $fecha1, $hora1, $sucursal, $gerencia, 
-        $region, $camaras, $axis, $mobotix, 
-        $grabador_local, $siC, $noC,$siA, 
-        $noA, $DSC, $Hone, $sidsc, 
-        $nodsc, $sih,$noh, $rob, 
-        $intrusion, $Bmuebles, $dano, $Montorobo, 
-        $bienesymuebles, $Z1, $Z2, $Z3,
-        $Z4, $Z6, $OZ, $CA, 
-        $maproxrobo, $tfalla, $eventocomo, $NPOLICIA, 
-        $NPATRULLA, $NOPERADOR, $NREPORTE, $ATT, 
-        $cargo, $tipo_llamada_entrada, $tipo_llamada_salida, $DESCHECHOS,
-        $MONITORISTA);
+    $fecha, $hora, $folio, $registro, $fecha1,
+    $hora1, $sucursal, $gerencia, $region, $camaras, 
+    $axis, $mobotix, $grabador_local, $siC, $noC,
+    $siA, $noA, $DSC, $Hone, $sidsc, 
+    $nodsc, $sih, $noh, $rob, $intrusion, 
+    $Bmuebles, $dano, $Montorobo, $bienesymuebles, $Z1, 
+    $Z2, $Z3, $Z4, $Z6, $OZ, 
+    $CA, $maproxrobo, $tfalla, $eventocomo, $NPOLICIA, 
+    $NPATRULLA, $NOPERADOR, $NREPORTE, $ATT, $cargo, 
+    $tipo_llamada_entrada, $tipo_llamada_salida, $DESCHECHOS, $MONITORISTA
+    );
     
     $stmt->execute();
 

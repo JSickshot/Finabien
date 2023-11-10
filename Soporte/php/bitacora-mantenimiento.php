@@ -11,7 +11,7 @@
         <form action="pdf.php" method="post" onsubmit="mostrarAlerta()">
 
             <div class="container">
-                <img class="image" src="../imagenes/logo-05.png"
+                <img class="image" src="../imagenes/Banner_Principal.jpg"
                     alt="Descripción de la imagen" style="margin-left: 800px;">
             </div>
 
