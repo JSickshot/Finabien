@@ -13,6 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $fecha = $_POST['fecha'];
     $hora = $_POST['hora'];
+    $folio = obtenerProximoFolioDesdeBD($conn);
     $registro = $_POST['registro'];
     $fecha1 = $_POST['fecha1'];
     $hora1 = $_POST['hora1'];
@@ -85,17 +86,58 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 
-    $stmt->bind_param("sssssssssssssssssssssssssssssssssssssssssssssssss", 
-    $fecha, $hora, $folio, $fecha1, $hora1, 
-    $registro, $sucursal, $gerencia, $region, 
-    $camaras, $axis, $mobotix, $grabador_local, 
-    $siC, $noC, $siA, $noA, $DSC, $Hone, $sidsc,
-     $nodsc, $sih, $noh, $rob, $intrusion, $Bmuebles, 
-     $dano, $Montorobo, $bienesymuebles, $Z1, $Z2, $Z3, 
-     $Z4, $Z6, $OZ, $CA, $maproxrobo, $tfalla, $eventocomo, 
-     $NPOLICIA, $NPATRULLA, $NOPERADOR, $NREPORTE, $ATT, 
-     $cargo, $tipo_llamada_entrada, $tipo_llamada_salida,
-      $DESCHECHOS, $MONITORISTA);
+    $stmt->bind_param(
+        "sssssssssssssssssssssssssssssssssssssssssssssssss",
+        $fecha,
+        $hora,
+        $folio,
+        $fecha1,
+        $hora1,
+        $registro,
+        $sucursal,
+        $gerencia,
+        $region,
+        $camaras,
+        $axis,
+        $mobotix,
+        $grabador_local,
+        $siC,
+        $noC,
+        $siA,
+        $noA,
+        $DSC,
+        $Hone,
+        $sidsc,
+        $nodsc,
+        $sih,
+        $noh,
+        $rob,
+        $intrusion,
+        $Bmuebles,
+        $dano,
+        $Montorobo,
+        $bienesymuebles,
+        $Z1,
+        $Z2,
+        $Z3,
+        $Z4,
+        $Z6,
+        $OZ,
+        $CA,
+        $maproxrobo,
+        $tfalla,
+        $eventocomo,
+        $NPOLICIA,
+        $NPATRULLA,
+        $NOPERADOR,
+        $NREPORTE,
+        $ATT,
+        $cargo,
+        $tipo_llamada_entrada,
+        $tipo_llamada_salida,
+        $DESCHECHOS,
+        $MONITORISTA
+    );
 
 
     if ($stmt->execute()) {
@@ -104,5 +146,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     $stmt->close();
     $conn->close();
+}
+function obtenerProximoFolioDesdeBD($conn)
+{
+
+    $query = "SELECT MAX(folio) AS max_folio FROM datos_formulario";
+    $result = $conn->query($query);
+
+    if ($result && $row = $result->fetch_assoc()) {
+        $proximoFolio = $row['max_folio'] + 1;
+    } else {
+        $proximoFolio = 1;
+    }
+
+    return $proximoFolio;
 }
 ?>

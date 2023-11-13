@@ -10,31 +10,26 @@ window.onload = function() {
     var horaActual = new Date().toLocaleTimeString();
     horaInput.value = horaActual;
 
-    var folio = 1;
-    folioInput.value = folio;
+    obtenerProximoFolio().then(function(folio) {
+        folioInput.value = folio;
+    });
 }
 
-function obtenerDatos() {
-    var registro = document.getElementById("registro").value;
-
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                var data = JSON.parse(xhr.responseText);
-                console.log("Respuesta JSON:", data);
-
-                document.getElementById("gerencia").value = data.gerencia;
-                document.getElementById("sucursal").value = data.sucursal;
-                document.getElementById("region").value = data.region;
-            } else {
-                console.error("Error al obtener los datos");
+function obtenerProximoFolio() {
+    return new Promise(function(resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    var data = JSON.parse(xhr.responseText);
+                    resolve(data.proximoFolio);
+                } else {
+                    reject("Error al obtener el próximo folio");
+                }
             }
-        }
-    };
+        };
 
-    xhr.open("POST", "datos.php", true);
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.send("registro=" + encodeURIComponent(registro));
+        xhr.open("GET", "prox-poli.php", true);
+        xhr.send();
+    });
 }
-

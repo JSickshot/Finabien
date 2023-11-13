@@ -90,10 +90,8 @@ body {
 }
 
 .rectangulo {
-    width: 98%;
+    width: 100%;
     background-color: #FFFFFF;
-    padding: 20px;
-    text-align: left;
     border: none;
 }
 

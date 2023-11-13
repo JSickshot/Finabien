@@ -1,11 +1,10 @@
 CREATE TABLE datos_formulario (
-    id INT AUTO_INCREMENT PRIMARY KEY,
     fecha DATE,
     hora TIME,
-    folio INT AUTO_INCREMENT,
-    registro VARCHAR(8),
+    folio INT AUTO_INCREMENT PRIMARY KEY,
     fecha1 DATE,
     hora1 TIME,
+    registro VARCHAR(8),
     sucursal VARCHAR(255),
     gerencia VARCHAR(255),
     region VARCHAR(255),

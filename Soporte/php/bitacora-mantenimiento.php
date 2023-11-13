@@ -11,7 +11,7 @@
         <form action="pdf.php" method="post" onsubmit="mostrarAlerta()">
 
             <div class="container">
-                <img class="image" src="../imagenes/Banner_Principal.jpg"
+                <img class="image" src="../imagenes/logo.jpg"
                     alt="Descripción de la imagen" style="margin-left: 800px;">
             </div>
 
@@ -59,7 +59,7 @@
             </div>
             <div class="rectangulo">
 
-            <input type="checkbox" name="correctivo" id="checkbox-correctivo" style="margin-right: 50px;">
+            <input type="checkbox" name="correctivo" id="checkbox-correctivo" style="margin-right: 10px;">
             <label for="checkbox-correctivo">Correctivo</label>
 
             <input type="checkbox" name="preventivo" id="checkbox-preventivo" style="margin-right: 10px;">
