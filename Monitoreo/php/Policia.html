@@ -17,9 +17,10 @@
         <label for="hora">Hora:</label><br>
         <input type="text" id="hora" name="hora" readonly><br>
 
-        <label for="folio">Folio:</label><br>
-        <input type="text" id="folio" name="folio" readonly>
-        <br>
+        <span id="folio">
+        </span>
+        <input type="hidden" id="folioHidden" name="folio" value="">
+
 
         <h2>Ing. Alejandro Melo</h2>
         <table>
@@ -40,14 +41,15 @@
                 <td>
                     <div class="right-column">
                         <label for="registro">Numero de Registro:</label>
-                        <input type="text" name="registro" maxlength="8" id="registro" required oninput="obtenerDatos()" autocomplete="off"><br>
-        
+                        <input type="text" name="registro" maxlength="8" id="registro" required oninput="obtenerDatos()"
+                            autocomplete="off"><br>
+
                         <label for="sucursal">Nombre de Sucursal:</label>
                         <input type="text" id="sucursal" name="sucursal" required readonly><br>
-        
+
                         <label for="gerencia">Estado:</label>
                         <input type="text" id="gerencia" name="gerencia" required readonly><br>
-        
+
                         <label for="region">Region:</label>
                         <input type="text" id="region" name="region" required readonly><br>
                     </div>
@@ -59,52 +61,52 @@
 
         <table>
             <tr>
-                <td colspan="2" class="blue-box">
+                <td colspan="1" class="blue-box">
                     <h2>Ficha Tecnica</h2>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div class="left-column2">
-                        <b><label for="camaras">Camara</label></b>
-                        <label><input type="radio" name="Camaras" value="Camaras">Axis</label>
-                        <label><input type="radio" name="Camaras" value="camaras">Mobotix</label>
-                        <label><input type="radio" name="Camaras" value="camaras">Grabador Local</label>
-                    </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="right-column2">
-                        <label for="camaras">Comunicacion al CNM</label>
-                        <label><input type="radio" name="aCamera" value="aCamera">Si</label>
-                        <label><input type="radio" name="aCamera" value="aCamera">No</label>
-                        <label><input type="radio" name="mcamara" value="mcamara">Si</label>
-                        <label><input type="radio" name="mcamara" value="mcamara">No</label>
-                    <br>
-                    </div>
-                </td>
-                <td>
-                    <div class="left-column3">
-                        <label for="Alarma">Alarma</label><br>
-                        <label><input type="radio" name="DSC" value="ADSC">Si</label>
-                        <label><input type="radio" name="DSC" value="ADSC">No</label><br>
+                    <div class="table-container">
+                        <div class="table-row">
+                            <div class="table-cell">
+                                <div class="left-column">
+                                    <b><label for="camaras">Camara</label></b><br>
+                                    <label><input type="radio" name="Camaras" value="Camaras">Axis</label><br>
+                                    <label><input type="radio" name="Camaras" value="camaras">Mobotix</label><br>
+                                    <label><input type="radio" name="Camaras" value="camaras">Grabador Local</label><br>
+                                </div>
+                            </div>
+                            <div class="table-cell right-column">
+                                <label for="camaras">Comunicacion al CNM</label>
+                                <label><input type="radio" name="aCamera" value="aCamera">Si</label>
+                                <label><input type="radio" name="aCamera" value="aCamera">No</label>
+                                <label><input type="radio" name="mcamara" value="mcamara">Si</label>
+                                <label><input type="radio" name="mcamara" value="mcamara">No</label>
+                            </div>
+                            <div class="table-cell">
+                                <div class="left-column">
+                                    <label for="Alarma">Alarma</label><br>
+                                    <label><input type="radio" name="DSC" value="ADSC">Si</label>
+                                    <label><input type="radio" name="DSC" value="ADSC">No</label><br>
+                                </div>
+                            </div>
+                            <div class="table-cell right-column">
+                                <label for="alarmcom">Comunicacion al CNM:</label><br>
+                                <label><input type="radio" name="smobotix" value="smobotix">Si</label>
+                                <label><input type="radio" name="smobotix" value="smobotix">No</label><br>
+                                <label><input type="radio" name="sgrabador" value="sgrabador">Si</label>
+                                <label><input type="radio" name="sgrabador" value="sgrabador">No</label><br>
+                            </div>
                         </div>
-                        
-                        <div class="right-column3">
-                        <label for="alarmcom">Comunicacion al CNM:</label><br>
-                        <label><input type="radio" name="smobotix" value="smobotix">Si</label>
-                        <label><input type="radio" name="smobotix" value="smobotix">No</label>
-                        <label><input type="radio" name="sgrabador" value="sgrabador">Si</label>
-                        <label><input type="radio" name="sgrabador" value="sgrabador">No</label><br>
-                        
-                        </div>
                     </div>
+
                 </td>
             </tr>
         </table>
-        
-        
-        
+
+
+
 
         <br>
         <table>
@@ -144,7 +146,7 @@
                     <label for="OZ"><input type="checkbox" id="OZ" name="OZ">OZ</label><br>
                     <label for="CA"><input type="checkbox" id="CA" name="CA">CA</label><br><br>
                     <h3>Zonas Activadas</h3><br>
-                    <select name="maproxrobo" id="maproxrobo" >
+                    <select name="maproxrobo" id="maproxrobo">
                         <option value="">Seleccione una opción</option>
                         <option value="PPRINCIPAL">Puerta Principal</option>
                         <option value="PSECUNDARIA">Puerta secundaria</option>
@@ -165,7 +167,7 @@
                     <label for="tfalla">Monto Aproximado de robo:</label>
                     <input type="text" id="tfalla" name="tfalla"><br><br>
                     <label for="eventocomo">Tipo de falla:</label>
-                    <select name="eventocomo" id="eventocomo" >
+                    <select name="eventocomo" id="eventocomo">
                         <option value="">Seleccione una opción</option>
                         <option value="EUSER">ERROR DE USUARIO</option>
                         <option value="FTECNICA">FALLA TECNICA</option>
@@ -174,7 +176,7 @@
                     </select><br><br>
 
                     <label for="event">Se determina evento como:</label>
-                    <select name="determina" id="falla" >
+                    <select name="determina" id="falla">
                         <option value="">Seleccione una opción</option>
                         <option value="EREAL">REAL</option>
                         <option value="EFALARM">FALSA ALARMA</option>
@@ -216,7 +218,7 @@
                     <label for="ATT">ATIENDE</label>
                     <input type="text" id="ATT" name="ATT"><br><br>
                     <label for="cargo">CARGO</label>
-                    <select name="cargo" id="cargo" >
+                    <select name="cargo" id="cargo">
                         <option value="">Seleccione una opción</option>
                         <option value="JEFEDESUCURSAL">JEFE DE SUCURSAL</option>
                         <option value="ENCARGADO">ENCARGADO</option>
@@ -231,7 +233,7 @@
             </tr>
         </table><br><br>
         <label for="MONI">Atentamente</label><br><br><br>
-        <select name="MONITORISTA" id="MONI" >
+        <select name="MONITORISTA" id="MONI">
             <option value="">Seleccione una opción</option>
             <option value="ASANTOS">ALEJANDRO SANTOS ZARCO</option>
             <option value="BDIAZ">BERENICE DIAZ OLIVARES</option>
@@ -255,13 +257,17 @@
         </select><br>
         <label for="MONITORISTA">Monitorista</label><br><br>
         <button type="submit" name="submit" onclick="mostrarAlerta()">Enviar</button>
-        
+
 
     </form>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('folio').innerText = '<?php echo $folio; ?>';
+        });
+
         function mostrarAlerta() {
-            alert("El formulario se ha enviado con  éxito.");
+            alert("El formulario se ha enviado con éxito.");
         }
     </script>
     <a href="bienvenido.php"><button>Regresar</button></a>

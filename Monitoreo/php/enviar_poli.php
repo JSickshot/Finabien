@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fecha = $_POST['fecha'];
     $hora = $_POST['hora'];
     $folio = obtenerProximoFolioDesdeBD($conn);
+    echo "Nuevo Folio: " . $folio;
     $registro = $_POST['registro'];
     $fecha1 = $_POST['fecha1'];
     $hora1 = $_POST['hora1'];
@@ -149,7 +150,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 function obtenerProximoFolioDesdeBD($conn)
 {
-
     $query = "SELECT MAX(folio) AS max_folio FROM datos_formulario";
     $result = $conn->query($query);
 
@@ -161,4 +161,5 @@ function obtenerProximoFolioDesdeBD($conn)
 
     return $proximoFolio;
 }
+
 ?>

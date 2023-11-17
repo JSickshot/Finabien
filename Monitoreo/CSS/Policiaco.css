@@ -1,32 +1,38 @@
+
 .blue-box {
     background-color: #063971;
     color: white;
     border-radius: 5px;
     text-align: center;
     margin: 0 auto;
-    width: 60%; 
-
+    width: 60%;
 }
-
 
 .blue-box h2 {
     margin: 0;
     padding: 1px;
 }
 
+
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 table {
     table-layout: fixed;
     width: 100%;
-    text-align: center; 
-    vertical-align: middle; 
-
+    border-collapse: collapse; 
 }
 
-th,
-td {
-    white-space: normal;
+td, th {
+    border: 1px solid #ddd; 
+    padding: 10px; 
     text-align: center;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
 form label {
@@ -41,10 +47,6 @@ form input[type="time"] {
     position: absolute;
 }
 
-.container {
-    display: flex;
-}
-
 .left-column {
     padding-right: 300px;
     max-height: 200px;
@@ -53,30 +55,33 @@ form input[type="time"] {
 
 .right-column {
     padding-right: 300px;
-    max-height: 200px; 
-    overflow-x: auto; 
+    max-height: 200px;
+    overflow-x: auto;
 }
 
-input[type="checkbox"] {
-    margin-right: 5px; 
+.left-column2,
+.right-column2,
+.left-column3,
+.right-column3 {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
 }
 
-.left-column2 {
-    padding-right: 200px;
-    max-height: 100px;
+.right-column2,
+.right-column3 {
+    margin-left: 10px;
 }
+
 
 .right-column2 {
-    padding-right: 100px;
-    max-height: 100px; 
-}
-
-.left-column3 {
     padding-right: 200px;
     max-height: 100px;
 }
 
-.right-column3 {
-    padding-right: 100px;
-    max-height: 100px; 
+
+
+input[type="checkbox"] {
+    margin-right: 5px;
 }

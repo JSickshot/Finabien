@@ -9,33 +9,13 @@
 </head>
 
 <body>
-    <h2>Nota informativa</h2>
-    <form action="enviar_poli.php" method="post">
-        <label for="fecha">Fecha:</label><br>
-        <input type="text" id="fecha" name="fecha" readonly><br>
-
-        <label for="hora">Hora:</label><br>
-        <input type="text" id="hora" name="hora" readonly><br>
-
-        <label for="folio">Folio:</label><br>
-        <input type="text" id="folio" name="folio" readonly><br>
-
-        <h2>Ing. Alejandro Melo</h2>
-        <table>
             <tr>
                 <td colspan="2" class="blue-box">
-                    <h2>Datos Generales</h2>
+                    <h2>Validar Inventario</h2>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <div class="left-column">
-                        <label for="fecha1">Fecha:</label>
-                        <input type="date" id="fecha1" name="fecha1"><br>
-                        <label for="hora1">Hora:</label>
-                        <input type="time" id="hora1" name="hora1"><br>
-                    </div>
-                </td>
+                
                 <td>
                     <div class="right-column">
                         <label for="registro">Numero de Registro:</label>
@@ -53,10 +33,7 @@
                 </td>
             </tr>
         </table>
-
-        <button type="submit" name="submit" onclick="mostrarAlerta()">Enviar</button>
         
-
     </form>
 
     <script>
@@ -64,7 +41,6 @@
             alert("El formulario se ha enviado con  éxito.");
         }
     </script>
-    <a href="bienvenido.php"><button>Regresar</button></a>
 </body>
 
 </html>
