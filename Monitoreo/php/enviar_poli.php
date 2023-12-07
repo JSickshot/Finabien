@@ -89,14 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $stmt->bind_param(
         "sssssssssssssssssssssssssssssssssssssssssssssssss",
-        $fecha,
-        $hora,
-        $folio,
-        $fecha1,
-        $hora1,
-        $registro,
-        $sucursal,
-        $gerencia,
+        $fecha,$hora,$folio,$fecha1,$hora1,$registro,$sucursal,$gerencia,
         $region,
         $camaras,
         $axis,
