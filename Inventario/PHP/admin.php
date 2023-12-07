@@ -34,7 +34,42 @@ function buscarRegistros($conn, $query) {
             <th>MODELO_ALMACENAMIENTO</th>
             <th>NUM_SERIE_ALMACENAMIENTO</th>
             <th>NUM_INVENTARIO_ALMACENAMIENTO</th>
-            <th>Actualizar</th>
+            <th>OBSERVACIONES</th>
+            <th>NUM_REP</th>
+            <th>FECHA_REPORTE (XX/XX/XXXX)</th>
+            <th>OFICIO_LLEGADA_CNM </th>
+            <th>FECHA_LLEGADA</th>
+            <th>NUM._SERVICIO</th>
+            <th>FECHA DE SERVICIO</th>
+            <th>OFICIO RESPUESTA SERVICIO</th>
+            <th>PROCEDE SINIESTRO (SI O NO)</th>
+            <th>FECHA SOLICITUD DICTAMEN</th>
+            <th>NUM OFICIO SOLICITUD DICTECNICO</th>
+            <th>ESTATUS SINIESTRO</th>
+            <th>DICTAMEN TECNICO</th>
+            <th>FECHA ENVIO DICTAMENTECNICO</th>
+            <th>OFICIO ENVIO DICTECNICO</th>
+            <th>NUM SINIESTRO CAMARA</th>
+            <th>NUM SINIESTRO ALMACENAMIENTO</th>
+            <th>NUM SINIESTRO ALARMA</th>
+            <th>FECHA DE ADJUDICACION</th>
+            <th>NUM REMISION CAMARA</th>
+            <th>NUM REMISION ALMACENAMIENTO</th>
+            <th>NUM REMISION ALARMA</th>
+            <th>FECHA DE ENTREGA CNM</th>
+            <th>QUIEN RECIBE CNM</th>
+            <th>EQUIPO EN SOPORTE 1=SI, 2=ENVIADO</th>
+            <th>FECHA DE ENTREGA ENVIO GERENCIA</th>
+            <th>OFICIO ENVIO DICTECNICO</th>
+            <th>OFICIO DE ENVIO</th>
+            <th>GERENCIA ENVIADA</th>
+            <th>ACUSE DE RESGUARDO </th>
+            <th>FECHA DE INSTALACION CAMARA</th>
+            <th>FECHA INSTALACION ALMACENAMIENTO</th>
+            <th>FECHA INSTALACION ALARMA</th>
+            <th>FECHA INSTALACION CAMARA2</th>
+            <th>FECHA DE INTALACION ALMACENAMIENTO 3</th>
+            <th>FECHA DE INSTALACION ALARMA4</th>
         </tr>";
 
         while ($row = $result->fetch_assoc()) {

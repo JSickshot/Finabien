@@ -17,23 +17,23 @@ function buscarRegistros($conn, $query) {
         echo "<table border='1'>";
         echo "
         <tr>
-            <th>REGION</th>
-            <th>ENTIDAD</th>
-            <th>REGISTRO</th>
+            <th>REGION</th> 1 
+            <th>ENTIDAD</th> 1
+            <th>REGISTRO</th> 1
             <th>SUCURSAL CON EQUIPO</th>
-            <th>NOMBRE_SUCURSAL</th>
-            <th>ESTADO_SUCURSAL</th>
+            <th>NOMBRE_SUCURSAL</th> 1 
+            <th>ESTADO_SUCURSAL</th>  
             <th>TIPO_COMUNICACIÓN</th>
             <th>TIPO_EQUIPO</th>
             <th>MODELO</th>
             <th>IP_CAMARA</th>
-            <th>ESTATUS_EQUIPO</th>
-            <th>NUM_SERIE_EQUIPO</th>
-            <th>NUM__INV_EQUIPO</th>
+            <th>ESTATUS_EQUIPO</th> 0
+            <th>NUM_SERIE_EQUIPO</th> 1
+            <th>NUM__INV_EQUIPO</th> 1
             <th>ESTATUS_SISTEMA_ALMACENAMIENTO</th>
-            <th>MODELO_ALMACENAMIENTO</th>
-            <th>NUM_SERIE_ALMACENAMIENTO</th>
-            <th>NUM_INVENTARIO_ALMACENAMIENTO</th>
+            <th>MODELO_ALMACENAMIENTO</th> 1
+            <th>NUM_SERIE_ALMACENAMIENTO</th>  
+            <th>NUM_INVENTARIO_ALMACENAMIENTO</th> 
         </tr>";
 
         while ($row = $result->fetch_assoc()) {
@@ -76,3 +76,5 @@ $conn->close();
 
 
 
+<a href="cerrar-sesion.php">Cerrar Sesión</a>
+<a href="user.html">Otra consulta</a>
