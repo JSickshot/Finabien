@@ -1,0 +1,12 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.no-results {
+    color: red;
+}

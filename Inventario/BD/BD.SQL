@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CREATE TABLE validainv (
     REGION VARCHAR(255) NOT NULL,
     ENTIDAD VARCHAR(255) NOT NULL,
@@ -17,6 +18,18 @@ CREATE TABLE validainv (
     NUM_SERIE VARCHAR(255),
     NUM_INV_ALMAC VARCHAR(255),
     PRIMARY KEY (REGISTRO)
+=======
+CREATE TABLE uinventario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    contraseña VARCHAR(255) NOT NULL,
+    rol ENUM('admin', 'usuario') NOT NULL
+>>>>>>> 5a40c5828e8f30b3f1c66faba37f5fd365d2ee4f
 );
 
+insert into uinventario (nombre,contraseña,rol) values ('Fernando', 12345, 'usuario');
+insert into uinventario (nombre,contraseña,rol) values ('Ilse', 12345, 'usuario'); 
+insert into uinventario (nombre,contraseña,rol) values ('Meche', 12345, 'usuario'); 
+insert into uinventario (nombre,contraseña,rol) values ('Roberto', 12345, 'usuario'); 
+insert into uinventario (nombre,contraseña,rol) values ('Mario', 1234, 'admin'); 
 
